@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
 const fadeElements = document.querySelectorAll('.fade-in');
 
 const appearOptions = {
-    threshold: 0.15,
+    threshold: 0.05,
     rootMargin: "0px 0px -50px 0px"
 };
 
@@ -58,4 +58,34 @@ interactiveElements.forEach(el => {
         mouseGlow.style.height = '400px';
         mouseGlow.style.background = 'radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 60%)';
     });
+});
+
+// Mobile Menu Functionality
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+const body = document.body;
+
+mobileMenuToggle.addEventListener('click', () => {
+    mobileMenuToggle.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    body.classList.toggle('menu-open');
+});
+
+// Close menu when clicking on a link
+const navItems = document.querySelectorAll('.nav-links a');
+navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        mobileMenuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+        body.classList.remove('menu-open');
+    });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!navLinks.contains(e.target) && !mobileMenuToggle.contains(e.target) && navLinks.classList.contains('active')) {
+        mobileMenuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+        body.classList.remove('menu-open');
+    }
 });
