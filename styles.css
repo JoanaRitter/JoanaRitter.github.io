@@ -177,6 +177,41 @@ section {
     color: var(--text-primary);
 }
 
+.lang-switch {
+    display: flex;
+    align-items: center;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--card-border);
+    transition: var(--transition-medium);
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: var(--accent-1);
+}
+
+.lang-btn svg {
+    transition: var(--transition-medium);
+}
+
+.lang-btn:hover svg {
+    stroke: var(--accent-1);
+}
+
 /* Buttons */
 .btn {
     display: inline-flex;
