@@ -319,7 +319,7 @@ section {
     font-family: var(--font-heading);
     font-size: 1.25rem;
     color: var(--text-secondary);
-    margin-bottom: 0.5rem;
+    display: inline-block;
 }
 
 .title {
@@ -327,6 +327,10 @@ section {
     font-weight: 600;
     margin-bottom: 0.5rem;
     letter-spacing: -2px;
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    flex-wrap: wrap;
 }
 
 .dot {
