@@ -50,12 +50,12 @@ interactiveElements.forEach(el => {
     el.addEventListener('mouseenter', () => {
         mouseGlow.style.width = '600px';
         mouseGlow.style.height = '600px';
-        mouseGlow.style.background = 'radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 60%)';
+        mouseGlow.style.background = 'radial-gradient(circle, rgba(233, 0, 116, 0.15) 0%, transparent 60%)';
     });
     
     el.addEventListener('mouseleave', () => {
         mouseGlow.style.width = '400px';
         mouseGlow.style.height = '400px';
-        mouseGlow.style.background = 'radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 60%)';
+        mouseGlow.style.background = 'radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 60%)';
     });
 });
