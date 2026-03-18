@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case: Attar | Joana Ritter</title>
+    <meta name="description"
+        content="Attar — a digital platform for professional relocation designed with Design Thinking to connect people to the job market in an agile and effective way.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --attar-cyan: #00D4D4;
+            --attar-purple: #8B4FCF;
+            --attar-gradient: linear-gradient(135deg, #00D4D4 0%, #8B4FCF 100%);
+        }
+
+        .case-hero-attar {
+            background: linear-gradient(135deg, #00c8c8 0%, #7b3fc4 100%);
+            border-radius: 24px;
+            padding: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 3rem;
+            margin-bottom: 5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .case-hero-attar::before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+            top: -80px;
+            right: -80px;
+        }
+
+        .case-hero-attar::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 50%;
+            bottom: -60px;
+            left: 30%;
+        }
+
+        .hero-text-attar { flex: 1; color: white; z-index: 1; }
+
+        .hero-text-attar .case-label {
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+
+        .hero-text-attar h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
+        }
+
+        .hero-text-attar .hero-tagline {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .hero-tags { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+        .hero-tag {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+
+        .hero-image-attar { flex: 0 0 auto; z-index: 1; }
+        .hero-image-attar img { width: 280px; border-radius: 20px; box-shadow: 0 30px 60px rgba(0,0,0,0.4); }
+
+        .section-divider { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 3rem; }
+        .section-divider-line { flex: 1; height: 3px; background: var(--attar-gradient); border-radius: 2px; }
+        .section-divider-label {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--attar-cyan);
+            white-space: nowrap;
+        }
+
+        .bilingual-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 3rem;
+            display: grid;
+            grid-template-columns: auto 1px 1fr;
+            gap: 2.5rem;
+            align-items: start;
+            margin-bottom: 2rem;
+        }
+
+        .bilingual-lang {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.4);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding-top: 0.2rem;
+        }
+
+        .bilingual-divider { background: rgba(255,255,255,0.1); }
+
+        .bilingual-content p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .bilingual-content p:last-child { margin-bottom: 0; }
+        .bilingual-content strong { color: var(--text-primary); font-weight: 600; }
+
+        .key-info-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 5rem; }
+
+        .key-info-item {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 1.5rem 2rem;
+        }
+
+        .key-info-label {
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--attar-cyan);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .key-info-value { font-size: 1rem; color: var(--text-primary); font-weight: 500; }
+
+        .personas-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 5rem; }
+
+        .persona-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 2.5rem;
+        }
+
+        .persona-header { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem; }
+
+        .persona-avatar {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            border: 3px solid var(--attar-purple);
+            background: linear-gradient(135deg, var(--attar-cyan), var(--attar-purple));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .persona-info h4 { font-size: 1.2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.2rem; }
+        .persona-info .persona-meta { font-size: 0.85rem; color: var(--attar-cyan); }
+
+        .persona-traits { list-style: none; padding: 0; }
+
+        .persona-traits li {
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .persona-traits li:last-child { border-bottom: none; }
+        .trait-pt { font-size: 0.9rem; color: var(--text-primary); font-weight: 500; }
+        .trait-en { font-size: 0.8rem; color: var(--text-secondary); }
+
+        .methodology-phases { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 5rem; }
+
+        .phase-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .phase-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: var(--attar-gradient);
+            border-radius: 16px 16px 0 0;
+        }
+
+        .phase-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: var(--attar-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .phase-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .phase-desc { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; }
+
+        .mockup-showcase {
+            background: linear-gradient(135deg, rgba(0,212,212,0.08) 0%, rgba(139,79,207,0.08) 100%);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 24px;
+            padding: 4rem;
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .mockup-showcase img { max-width: 380px; width: 100%; border-radius: 24px; box-shadow: 0 30px 80px rgba(0,0,0,0.5); }
+
+        .userflow-header {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 2rem 2.5rem;
+            display: grid;
+            grid-template-columns: auto 1px 1fr;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .userflow-role { text-align: center; }
+        .userflow-role .role-pt { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1rem; color: var(--text-primary); }
+        .userflow-role .role-en { font-size: 0.8rem; color: var(--text-secondary); }
+        .userflow-divider-v { background: rgba(255,255,255,0.12); align-self: stretch; }
+        .userflow-description .flow-pt { font-size: 1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.25rem; }
+        .userflow-description .flow-en { font-size: 0.9rem; color: var(--text-secondary); }
+
+        @media (max-width: 900px) {
+            .case-hero-attar { flex-direction: column; padding: 2.5rem; text-align: center; }
+            .hero-tags { justify-content: center; }
+            .hero-image-attar img { width: 200px; }
+            .hero-text-attar h1 { font-size: 2.5rem; }
+            .key-info-strip { grid-template-columns: 1fr; }
+            .personas-grid { grid-template-columns: 1fr; }
+            .methodology-phases { grid-template-columns: 1fr 1fr; }
+            .bilingual-card { grid-template-columns: 1fr; }
+            .bilingual-divider { display: none; }
+            .userflow-header { grid-template-columns: 1fr; }
+            .userflow-divider-v { display: none; }
+        }
+
+        @media (max-width: 600px) {
+            .methodology-phases { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="glow-bg"></div>
+    <div class="mouse-glow" id="mouse-glow"></div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="en.html" class="logo-area"><span class="logo">JR.</span><span class="logo-separator"></span><span class="logo-secondary">fivecom</span></a>
+            <ul class="nav-links">
+                <li><a href="en.html">Home</a></li>
+                <li><a href="en-cases.html" class="active">Cases</a></li>
+                <li><a href="en-about.html">Resume</a></li>
+                <li><a href="en-contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-extras">
+                <div class="lang-switch">
+                    <a href="case-attar.html" class="lang-btn" aria-label="Switch to Portuguese" title="Português">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <span>PT</span>
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="case-study" style="padding-top: 130px;">
+            <div class="container fade-in">
+
+                <a href="en-cases.html" class="inline-link" style="margin-bottom: 2.5rem; display: inline-block;">&larr; Back to Cases</a>
+
+                <!-- HERO -->
+                <div class="case-hero-attar">
+                    <div class="hero-text-attar">
+                        <p class="case-label">Case Study · Mobile App</p>
+                        <h1>Attar</h1>
+                        <p class="hero-tagline">Professional relocation in an agile and innovative way</p>
+                        <div class="hero-tags">
+                            <span class="hero-tag">Design Thinking</span>
+                            <span class="hero-tag">UX Research</span>
+                            <span class="hero-tag">Prototyping</span>
+                            <span class="hero-tag">Mobile App</span>
+                            <span class="hero-tag">Personas</span>
+                        </div>
+                    </div>
+                    <div class="hero-image-attar">
+                        <img src="public/images/attar-case-preview.png" alt="Attar App Interface">
+                    </div>
+                </div>
+
+                <!-- KEY INFO -->
+                <div class="key-info-strip">
+                    <div class="key-info-item">
+                        <p class="key-info-label">Objective</p>
+                        <p class="key-info-value">Help with professional relocation and career improvement</p>
+                    </div>
+                    <div class="key-info-item">
+                        <p class="key-info-label">Methodology</p>
+                        <p class="key-info-value">Design Thinking · 4 phases</p>
+                    </div>
+                    <div class="key-info-item">
+                        <p class="key-info-label">Product</p>
+                        <p class="key-info-value">Mobile digital platform with jobs, courses and selection</p>
+                    </div>
+                </div>
+
+                <!-- OVERVIEW -->
+                <div class="section-divider">
+                    <div class="section-divider-label">Overview</div>
+                    <div class="section-divider-line"></div>
+                </div>
+
+                <div class="bilingual-card" style="margin-bottom: 5rem;">
+                    <span class="bilingual-lang">EN-US</span>
+                    <div class="bilingual-divider"></div>
+                    <div class="bilingual-content">
+                        <p>Searching for the ideal job and keeping up to date has never been more popular than it is today.</p>
+                        <p>We created this digital platform with several opportunities, as dissemination of free courses, helping in professional and intellectual improvement, directing people to the respective jobs and selection processes.</p>
+                        <p>Through this app, relocation to the job market has become more dynamic, faster and less stressful.</p>
+                        <p><strong>Objective:</strong> Helping people looking for professional improvement or a return to the job market in an agile and effective way.</p>
+                        <p><strong>Challenge:</strong> Understand people's needs during this delicate period and get them to join an app that can help in an innovative way.</p>
+                        <p><strong>Design Thinking</strong> was the methodology used. A method that uses design as a structured approach to generate and improve ideas. Methodology carried out in four phases, which goes from identifying the challenge to solving the problem.</p>
+                    </div>
+                </div>
+
+                <!-- METHODOLOGY -->
+                <div class="section-divider">
+                    <div class="section-divider-label">Methodology</div>
+                    <div class="section-divider-line"></div>
+                </div>
+
+                <div class="methodology-phases" style="margin-top: 2.5rem;">
+                    <div class="phase-card">
+                        <div class="phase-number">01</div>
+                        <div class="phase-name">Empathy</div>
+                        <p class="phase-desc">Deeply understand the pains, needs and behaviors of users.</p>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">02</div>
+                        <div class="phase-name">Definition</div>
+                        <p class="phase-desc">Synthesize what was learned and clearly define the problem to be solved.</p>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">03</div>
+                        <div class="phase-name">Ideation</div>
+                        <p class="phase-desc">Generate and explore various creative solutions for the identified challenge.</p>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">04</div>
+                        <div class="phase-name">Prototype</div>
+                        <p class="phase-desc">Materialize ideas into testable and functional prototypes for validation.</p>
+                    </div>
+                </div>
+
+                <!-- RESEARCH -->
+                <div class="section-divider">
+                    <div class="section-divider-label">Research</div>
+                    <div class="section-divider-line"></div>
+                </div>
+
+                <div class="bilingual-card" style="margin-top: 2.5rem; margin-bottom: 5rem;">
+                    <span class="bilingual-lang">EN-US</span>
+                    <div class="bilingual-divider"></div>
+                    <div class="bilingual-content">
+                        <p><strong>We interviewed people who helped us measure which information and functions would be paramount for our application.</strong></p>
+                        <p>Based on the surveys, we created two personas, one with an entrepreneurial profile, with numerous experiences and one that has no experiences, as it is starting his professional life. Both represent our ideal customer and facilitate the direction of product construction.</p>
+                        <p style="font-size: 0.8rem; color: var(--text-secondary); font-style: italic; margin-top: 1rem;">*Summarized personas merely illustrative</p>
+                    </div>
+                </div>
+
+                <!-- PERSONAS -->
+                <div class="section-divider">
+                    <div class="section-divider-label">Personas</div>
+                    <div class="section-divider-line"></div>
+                </div>
+
+                <div class="personas-grid" style="margin-top: 2.5rem;">
+                    <div class="persona-card">
+                        <div class="persona-header">
+                            <div class="persona-avatar">👩🏾</div>
+                            <div class="persona-info">
+                                <h4>Amanda</h4>
+                                <p class="persona-meta">24 years old · Designer</p>
+                            </div>
+                        </div>
+                        <ul class="persona-traits">
+                            <li><span class="trait-pt">- Searching for professional relocation</span></li>
+                            <li><span class="trait-pt">- Did not like the last professional experience</span></li>
+                            <li><span class="trait-pt">- Takes online courses</span></li>
+                        </ul>
+                    </div>
+                    <div class="persona-card">
+                        <div class="persona-header">
+                            <div class="persona-avatar">🧔🏻</div>
+                            <div class="persona-info">
+                                <h4>Ygor</h4>
+                                <p class="persona-meta">31 years old · Entrepreneur</p>
+                            </div>
+                        </div>
+                        <ul class="persona-traits">
+                            <li><span class="trait-pt">- Has the dream of opening a business</span></li>
+                            <li><span class="trait-pt">- Wants to earn more than in the current job</span></li>
+                            <li><span class="trait-pt">- Always looking for knowledge about the market</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- EMPATHY MAP -->
+                <div class="section-divider" style="margin-top: 3rem;">
+                    <div class="section-divider-label">Empathy Map</div>
+                    <div class="section-divider-line"></div>
+                </div>
+
+                <div style="margin-top: 2.5rem;">
+                    <div class="bilingual-card" style="margin-bottom: 2rem;">
+                        <span class="bilingual-lang">EN-US</span>
+                        <div class="bilingual-divider"></div>
+                        <div class="bilingual-content">
+                            <p>After creating the two personas, we made the empathy map so that we could, in a collaborative way, get to know our users in depth and have a real view of their behaviors, being able to delve into their pains and needs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- USERFLOW -->
+                <div class="section-divider">
+                    <div class="section-divider-label">User Flow</div>
+                    <div class="section-divider-line"></div>
+                </div>
+
+                <div style="margin-top: 2.5rem; margin-bottom: 5rem;">
+                    <div class="userflow-header">
+                        <div class="userflow-role">
+                            <p class="role-pt">Searcher</p>
+                        </div>
+                        <div class="userflow-divider-v"></div>
+                        <div class="userflow-description">
+                            <p class="flow-pt">Searcher userflow until the end of the application for the job opportunity</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MOCKUP -->
+                <div class="section-divider">
+                    <div class="section-divider-label">Prototype</div>
+                    <div class="section-divider-line"></div>
+                </div>
+
+                <div class="mockup-showcase" style="margin-top: 2.5rem;">
+                    <img src="public/images/attar-case-preview.png" alt="Attar App Mockup">
+                    <p style="margin-top: 2rem; color: var(--text-secondary); font-size: 0.95rem;">Mobile interface focused on connecting people to career opportunities in an agile way, with integrated free courses and job listings.</p>
+                </div>
+
+                <!-- CTA -->
+                <div class="case-cta" style="text-align: center; margin-bottom: 5rem;">
+                    <a href="en-contact.html" class="btn btn-primary">Like this project? Let's talk</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Joana Ritter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

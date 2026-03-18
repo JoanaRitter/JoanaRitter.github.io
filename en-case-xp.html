@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: XP Redesign | Joana Ritter</title>
+    <meta name="description"
+        content="Proposed menu and homepage redesign for XP Investimentos, focused on simplifying navigation and highlighting major features.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="glow-bg"></div>
+    <div class="mouse-glow" id="mouse-glow"></div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="en.html" class="logo-area"><span class="logo">JR.</span><span class="logo-separator"></span><span class="logo-secondary">fivecom</span></a>
+            <ul class="nav-links">
+                <li><a href="en.html">Home</a></li>
+                <li><a href="en-cases.html" class="active">Cases</a></li>
+                <li><a href="en-about.html">Resume</a></li>
+                <li><a href="en-contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-extras">
+                <div class="lang-switch">
+                    <a href="case-xp.html" class="lang-btn" aria-label="Mudar para Português" title="Português">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <span>PT</span>
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="case-study" style="padding-top: 150px;">
+            <div class="container fade-in">
+                <a href="en-cases.html" class="inline-link" style="margin-bottom: 2rem; display: inline-block;">&larr; Back to Cases</a>
+                
+                <h1 class="title" style="margin-bottom: 1rem;">Proposed New Menu and Homepage</h1>
+                <p class="subtitle" style="font-size: 1.5rem; margin-bottom: 3rem;">XP Investimentos</p>
+
+                <div class="case-content grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 5rem;">
+                    <div class="case-text">
+                        <h3 class="small-title">Objective</h3>
+                        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">
+                            XP is a rapidly growing company, and as a result, they had to add a lot of content to their homepage, which can make navigation difficult.
+                        </p>
+                        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">
+                            Because of this, I created a proposed menu and homepage for XP, aiming to make navigation easier for the user.
+                        </p>
+                        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">
+                            The proposed menu brings together relevant information into simple categories, allowing users to find what they need with ease. The homepage was designed to highlight XP's main features, facilitating the discovery of new content and services.
+                        </p>
+                        <p style="color: var(--text-secondary); font-size: 1.1rem;">
+                            Additionally, the page was developed to make the user experience more intuitive, with interactive elements that help users find what they are looking for quickly.
+                        </p>
+                    </div>
+                    <div class="case-visual">
+                        <div class="glass-card" style="padding: 1rem; display: flex; justify-content: center; align-items: center;">
+                            <img src="public/images/xp-case-preview.png" alt="XP Interface Design" style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prototype-section" style="margin-bottom: 5rem;">
+                    <h3 class="section-title">Prototype</h3>
+                    <div class="glass-card" style="padding: 3rem; text-align: center;">
+                        <img src="public/images/xp-case-preview.png" alt="XP Mobile Prototype" style="max-width: 500px; width: 100%; border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.6);">
+                        <p style="margin-top: 2rem; color: var(--text-secondary);">Mobile interface focused on usability and quick access to investments and banking services.</p>
+                    </div>
+                </div>
+
+                <div class="case-cta" style="text-align: center; margin-bottom: 5rem;">
+                    <a href="en-contact.html" class="btn btn-primary">Like the project? Let's talk</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Joana Ritter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
