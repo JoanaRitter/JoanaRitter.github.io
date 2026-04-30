@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case: INFLUO | Joana Ritter</title>
     <meta name="description"
-        content="How we transformed complex creator search into a simple and intelligent AI-guided experience.">
+        content="How we transformed complex creator search into a simple, AI-driven experience.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
     <link rel="stylesheet" href="styles.css">
@@ -18,20 +18,18 @@
 
 <body>
     <div class="glow-bg"></div>
-    <div class="mouse-glow" id="mouse-glow"></div>
-
     <nav class="navbar">
         <div class="nav-content">
             <a href="en.html" class="logo">JR.</a>
             <ul class="nav-links">
                 <li><a href="en.html">Home</a></li>
                 <li><a href="en-cases.html" class="active">Cases</a></li>
-                <li><a href="en-resume.html">Resume</a></li>
+                <li><a href="en-about.html">Resume</a></li>
                 <li><a href="en-contact.html">Contact</a></li>
             </ul>
             <div class="nav-extras">
                 <div class="lang-switch">
-                    <a href="case-influo.html" class="lang-btn" aria-label="Switch to Portuguese" title="Português">
+                    <a href="case-influo.html" class="lang-btn" aria-label="Mudar para Português" title="Português">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"></circle>
                             <line x1="2" y1="12" x2="22" y2="12"></line>
@@ -50,231 +48,228 @@
     </nav>
 
     <main>
-        <section class="case-study" style="padding-top: 150px;">
+        <section class="case-study">
             <div class="container fade-in">
-                <a href="en-cases.html" class="inline-link" style="margin-bottom: 2rem; display: inline-block;">&larr; Back to Cases</a>
-                
-                <h1 class="title" style="margin-bottom: 1rem; font-size: 4rem;">INFLUO</h1>
-                <p class="subtitle" style="font-size: 1.8rem; margin-bottom: 4rem; color: var(--accent-1); font-weight: 500;">Transforming creator marketing with artificial intelligence</p>
 
-                <!-- Hero Visual - Laptop Mockup -->
-                <!-- Hero Visual - Clean Case Display -->
-                <div class="hero-visual fade-in" style="margin-bottom: 8rem;">
-                    <div class="glass-card" style="padding: 0; overflow: hidden; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1);">
-                        <img src="public/images/influo-hero.gif" alt="INFLUO Interface Preview Animation" style="width: 100%; display: block;">
+                <a href="en-cases.html" class="inline-link case-back">&larr; Back to Cases</a>
+
+                <p class="case-eyebrow">Case Study · SaaS Platform</p>
+                <h1 class="case-title">INFLUO</h1>
+                <p class="case-subtitle">Transforming creator marketing with artificial intelligence.</p>
+
+                <!-- Hero visual -->
+                <div class="case-section">
+                    <div class="case-figure">
+                        <img src="public/images/influo-hero.gif" alt="INFLUO Interface Preview Animation">
                     </div>
                 </div>
 
-                <!-- The Challenge Section -->
-                <div class="case-section grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 8rem;">
-                    <div>
-                        <h3 class="small-title">The Challenge</h3>
-                        <p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.7; margin-bottom: 2rem;">
-                            Finding the ideal creator is still a slow, manual process based on trial and error. 
-                            Existing tools require complex filters but ignore an essential point: users don't know exactly what to look for.
-                        </p>
-                        <div class="glass-card" style="padding: 2rem; border-left: 4px solid var(--accent-1);">
-                            <h4 style="margin-bottom: 1rem; font-size: 1.3rem;">The Question</h4>
-                            <p style="font-size: 1.5rem; font-weight: 500; color: white;">How to transform a complex problem into a simple and intelligent experience?</p>
+                <!-- The Challenge -->
+                <div class="case-rule">
+                    <span class="case-rule__label">The Challenge</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <div class="case-grid-2">
+                        <div>
+                            <p class="case-prose">
+                                Finding the right creator is still a slow, manual, trial-and-error process. Existing tools require complex filters, but they ignore an essential point: users don't know exactly what to look for.
+                            </p>
+                            <div class="case-callout" style="margin-top: 2rem;">
+                                <p class="case-callout__label">The question</p>
+                                <p class="case-callout__text">How do we turn a complex problem into a simple, intelligent experience?</p>
+                            </div>
                         </div>
-                    </div>
-                    <div style="display: flex; flex-direction: column; justify-content: center;">
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem; font-size: 1.2rem;">
-                                <span style="color: var(--accent-1); font-weight: bold; font-size: 1.5rem;">&bull;</span> Slow
-                            </li>
-                            <li style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem; font-size: 1.2rem;">
-                                <span style="color: var(--accent-1); font-weight: bold; font-size: 1.5rem;">&bull;</span> Manual
-                            </li>
-                            <li style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem; font-size: 1.2rem;">
-                                <span style="color: var(--accent-1); font-weight: bold; font-size: 1.5rem;">&bull;</span> Trial and Error
-                            </li>
+                        <ul class="case-arrow-list">
+                            <li>Slow</li>
+                            <li>Manual</li>
+                            <li>Trial and error</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Discovery & Research -->
-                <div class="case-section" style="margin-bottom: 8rem;">
-                    <h3 class="section-title">Discovery & Research</h3>
-                    <div class="grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+                <!-- Discovery -->
+                <div class="case-rule">
+                    <span class="case-rule__label">Discovery & Research</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <div class="case-grid-2">
                         <div>
-                            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
-                                We started with a common hypothesis: users would find creators using filters. However, during interviews with marketing professionals and small brands, we realized that <strong>users think in objectives, not in parameters.</strong>
+                            <p class="case-prose">
+                                We started from a common hypothesis: users would find creators using filters. During interviews with marketers and small brands, we realized that <strong>users think in terms of goals, not parameters</strong>.
                             </p>
-                            <h4 class="small-title" style="margin-top: 3rem;">Key Learnings</h4>
-                            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.5rem;">
-                                <blockquote style="border-left: 2px solid var(--accent-2); padding-left: 1.5rem; font-style: italic; color: var(--text-secondary);">
-                                    "I know the campaign objective, but I don't know where to start"
-                                </blockquote>
-                                <blockquote style="border-left: 2px solid var(--accent-2); padding-left: 1.5rem; font-style: italic; color: var(--text-secondary);">
-                                    "Filters don't guarantee good results"
-                                </blockquote>
-                                <blockquote style="border-left: 2px solid var(--accent-2); padding-left: 1.5rem; font-style: italic; color: var(--text-secondary);">
-                                    "Testing creators takes too much time"
-                                </blockquote>
-                            </div>
                         </div>
-                        <div class="glass-card" style="padding: 3rem; display: flex; flex-direction: column; justify-content: center; text-align: center; background: linear-gradient(135deg, rgba(88, 28, 135, 0.1), rgba(15, 23, 42, 0.1));">
-                            <span style="font-size: 3rem; margin-bottom: 1.5rem;">💡</span>
-                            <h4 style="font-size: 1.8rem; margin-bottom: 1rem;">Insight</h4>
-                            <p style="font-size: 1.3rem; color: var(--text-secondary);">The problem is not searching for creators.<br><strong style="color: white; font-size: 1.5rem;">It's transforming intention into decision.</strong></p>
+                        <div>
+                            <p class="case-prose" style="margin-bottom: 1.5rem;">Key learnings:</p>
+                            <blockquote class="case-quote">"I know the campaign goal, but I don't know where to start."</blockquote>
+                            <blockquote class="case-quote">"Filters don't guarantee good results."</blockquote>
+                            <blockquote class="case-quote">"Testing creators takes too much time."</blockquote>
                         </div>
+                    </div>
+
+                    <div class="case-callout" style="margin-top: 3rem;">
+                        <p class="case-callout__label">Insight</p>
+                        <p class="case-callout__text">The problem isn't searching for creators — it's turning intent into decision.</p>
                     </div>
                 </div>
 
                 <!-- The Solution -->
-                <div class="case-section" style="margin-bottom: 8rem;">
-                    <h3 class="section-title">The Solution</h3>
-                    <div style="margin-bottom: 4rem;">
-                        <p style="color: var(--text-secondary); font-size: 1.2rem; line-height: 1.7; max-width: 800px; margin-bottom: 3rem;">
-                            We completely changed the approach: from a filter-based search to an <strong>AI-guided experience</strong>. We created an interface where users describe their campaign in natural language and the system interprets intention, analyzes context, and recommends creators based on compatibility.
-                        </p>
-                        <div class="grid" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem;">
-                            <div class="glass-card hover-lift" style="padding: 2rem;">
-                                <h4 style="margin-bottom: 1rem; color: var(--accent-1);">Interpretation</h4>
-                                <p style="font-size: 0.95rem; color: var(--text-secondary);">Use of NLP to understand the campaign briefing beyond keywords.</p>
-                            </div>
-                            <div class="glass-card hover-lift" style="padding: 2rem;">
-                                <h4 style="margin-bottom: 1rem; color: var(--accent-1);">Context</h4>
-                                <p style="font-size: 0.95rem; color: var(--text-secondary);">Analysis of niche, audience, and the creator's real engagement relative to the goal.</p>
-                            </div>
-                            <div class="glass-card hover-lift" style="padding: 2rem;">
-                                <h4 style="margin-bottom: 1rem; color: var(--accent-1);">Compatibility</h4>
-                                <p style="font-size: 0.95rem; color: var(--text-secondary);">Match score based on historical data and semantics.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="case-rule">
+                    <span class="case-rule__label">The Solution</span>
+                    <span class="case-rule__line"></span>
+                </div>
 
-                    <div class="grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-                        <div>
-                            <h3 class="small-title">Design Decision</h3>
-                            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                                Transforming the search into a conversational experience allowed us to reduce cognitive load, eliminate friction, and align the system with the user's mental model.
-                            </p>
-                            <h4 class="small-title" style="margin-top: 2rem;">Experience Structure</h4>
-                            <ul style="list-style: none; padding: 0; color: var(--text-secondary);">
-                                <li style="margin-bottom: 0.8rem;">&rarr; Sidebar menu for navigation</li>
-                                <li style="margin-bottom: 0.8rem;">&rarr; AI Chat as the main entry point</li>
-                                <li style="margin-bottom: 0.8rem;">&rarr; Dynamic results on the side</li>
-                            </ul>
+                <div class="case-section">
+                    <p class="case-prose" style="margin-bottom: 3rem;">
+                        We changed the approach completely: from a filter-based search to an <strong>AI-guided experience</strong>. The user describes their campaign in natural language, and the system interprets intent, analyzes context, and recommends creators based on compatibility.
+                    </p>
+
+                    <div class="case-feature-grid">
+                        <div class="case-feature">
+                            <h4 class="case-feature__title">Interpretation</h4>
+                            <p class="case-feature__desc">NLP to understand the campaign brief beyond keywords.</p>
                         </div>
-                        <div class="hero-visual" style="margin: 0;">
-                            <div class="glass-card" style="padding: 0; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-                                <img src="public/images/influo-ui-full.png" alt="Detailed INFLUO UI Original High Quality" style="width: 100%; display: block;">
-                            </div>
+                        <div class="case-feature">
+                            <h4 class="case-feature__title">Context</h4>
+                            <p class="case-feature__desc">Analysis of niche, audience, and real engagement against the goal.</p>
+                        </div>
+                        <div class="case-feature">
+                            <h4 class="case-feature__title">Compatibility</h4>
+                            <p class="case-feature__desc">Match score based on historical data and semantics.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Process and Testing -->
-                <div class="case-section" style="margin-bottom: 8rem;">
-                    <div class="grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+                <!-- Design decision -->
+                <div class="case-section">
+                    <div class="case-grid-mixed">
                         <div>
-                            <h3 class="section-title">Prototyping & Testing</h3>
-                            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
-                                The solution evolved in rapid cycles: from filter searches to real-time results chat. We conducted 4 qualitative tests with real users.
+                            <p class="case-eyebrow">Design decision</p>
+                            <p class="case-prose" style="margin-bottom: 2rem;">
+                                Turning search into a conversational experience reduced cognitive load, removed friction, and brought the system closer to the user's mental model.
                             </p>
-                            <div class="glass-card" style="padding: 2rem;">
-                                <h4 style="margin-bottom: 1.5rem; font-size: 1.2rem;">Test Results</h4>
-                                <div style="display: flex; flex-direction: column; gap: 1rem;">
-                                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                                        <span style="color: var(--text-secondary);">Preference for chat vs. filters</span>
-                                        <span style="color: var(--accent-1); font-weight: bold; font-size: 1.2rem;">100%</span>
+                            <p class="case-eyebrow">Experience structure</p>
+                            <ul class="case-arrow-list">
+                                <li>Side menu for navigation</li>
+                                <li>AI chat as primary entry point</li>
+                                <li>Dynamic results alongside</li>
+                            </ul>
+                        </div>
+                        <div class="case-figure">
+                            <img src="public/images/influo-ui-full.png" alt="INFLUO Interface">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prototyping & Testing -->
+                <div class="case-rule">
+                    <span class="case-rule__label">Prototyping & Testing</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <div class="case-grid-2">
+                        <div>
+                            <p class="case-prose" style="margin-bottom: 2rem;">
+                                The solution evolved in fast cycles — from filter-based search to chat with real-time results. We ran 4 qualitative tests with real users.
+                            </p>
+                            <div class="case-callout">
+                                <p class="case-callout__label">Test results</p>
+                                <div class="case-stat-row" style="margin-top: 1rem;">
+                                    <div class="case-stat-row__head">
+                                        <span class="case-stat-row__label">Preference for chat over filters</span>
+                                        <span class="case-stat-row__value">100%</span>
                                     </div>
-                                    <div style="background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px; overflow: hidden;">
-                                        <div style="background: var(--accent-1); width: 100%; height: 100%;"></div>
+                                    <div class="case-bar">
+                                        <div class="case-bar__fill" style="width: 100%;"></div>
                                     </div>
-                                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 1rem;">
-                                        &bull; Perceptible reduction in interface understanding time.<br>
-                                        &bull; Increased trust when AI explained the recommendations.
-                                    </p>
                                 </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="small-title">Iterations</h3>
-                            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                                Based on testing, we refined the product:
-                            </p>
-                            <ul style="list-style: none; padding: 0; color: var(--text-secondary);">
-                                <li style="margin-bottom: 1rem; display: flex; gap: 1rem;">
-                                    <span style="color: var(--accent-2);">+</span> Reduced information in cards
-                                </li>
-                                <li style="margin-bottom: 1rem; display: flex; gap: 1rem;">
-                                    <span style="color: var(--accent-2);">+</span> Highlighted the compatibility score
-                                </li>
-                                <li style="margin-bottom: 1rem; display: flex; gap: 1rem;">
-                                    <span style="color: var(--accent-2);">+</span> Improved spacing and legibility
-                                </li>
-                                <li style="margin-bottom: 1rem; display: flex; gap: 1rem;">
-                                    <span style="color: var(--accent-2);">+</span> Simplified visual hierarchy
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Role and Engineering -->
-                <div class="case-section" style="margin-bottom: 8rem;">
-                    <h3 class="section-title">The Role of the Design Engineer</h3>
-                    <div class="grid" style="display: grid; grid-template-columns: 2fr 1.5fr; gap: 4rem;">
-                        <div>
-                            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
-                                I acted as <strong>Design Engineer</strong> throughout the process: discovery, research, UX/UI, interaction design, prototyping, and AI-enabled front-end development. Integrating design and code allowed for faster iterations and more precise decisions.
-                            </p>
-                            <div class="glass-card" style="padding: 2rem; background: linear-gradient(135deg, rgba(30, 41, 59, 0.5), rgba(15, 23, 42, 0.5)); border: 1px solid rgba(255,255,255,0.1);">
-                                <h4 style="margin-bottom: 1rem;">Engineering + Design</h4>
-                                <p style="color: var(--text-secondary); font-size: 1rem;">
-                                    AI was used both within the product and in building the interface, ensuring consistency and performance in the final experience.
+                                <p class="case-prose" style="font-size: 0.9rem; margin-top: 1.25rem;">
+                                    Noticeable reduction in time to understand the interface. Increased confidence when the AI explained its recommendations.
                                 </p>
                             </div>
                         </div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                            <div class="tag" style="padding: 1rem; text-align: center; justify-content: center;">Discovery</div>
-                            <div class="tag" style="padding: 1rem; text-align: center; justify-content: center;">Research</div>
-                            <div class="tag" style="padding: 1rem; text-align: center; justify-content: center;">UX/UI</div>
-                            <div class="tag" style="padding: 1rem; text-align: center; justify-content: center;">Prototyping</div>
-                            <div class="tag" style="padding: 1rem; text-align: center; justify-content: center; grid-column: span 2;">AI-Enabled Front-end</div>
+                        <div>
+                            <p class="case-eyebrow">Iterations</p>
+                            <ul class="case-arrow-list">
+                                <li>Reduced information on cards</li>
+                                <li>Highlighted compatibility score</li>
+                                <li>Improved spacing and readability</li>
+                                <li>Simplified visual hierarchy</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <!-- Final Impact -->
-                <div class="case-section" style="margin-bottom: 8rem; text-align: center;">
-                    <div class="glass-card" style="padding: 4rem; max-width: 900px; margin: 0 auto; background: radial-gradient(circle at top right, rgba(88, 28, 135, 0.15), transparent);">
-                        <h3 class="section-title" style="margin-bottom: 2rem;">Final Result & Impact</h3>
-                        <p style="font-size: 1.3rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 3rem;">
-                            A platform that allows discovering creators with natural language, receiving data-driven recommendations, and making clearer decisions.
+                <!-- The Design Engineer's role -->
+                <div class="case-rule">
+                    <span class="case-rule__label">The Design Engineer's Role</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <div class="case-grid-mixed">
+                        <div>
+                            <p class="case-prose">
+                                I worked as <strong>Design Engineer</strong> across the entire process — discovery, research, UX/UI, interaction design, prototyping, and front-end development with AI. The integration between design and code allowed faster iterations and more precise decisions.
+                            </p>
+                            <div class="case-callout" style="margin-top: 2rem;">
+                                <p class="case-callout__label">Engineering + Design</p>
+                                <p class="case-callout__text">AI was used both in the product and in the construction of the interface, ensuring consistency and performance in the final experience.</p>
+                            </div>
+                        </div>
+                        <div class="case-tag-grid">
+                            <span>Discovery</span>
+                            <span>Research</span>
+                            <span>UX/UI</span>
+                            <span>Prototyping</span>
+                            <span class="case-tag-wide">Front-end with AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Final result -->
+                <div class="case-section">
+                    <div class="case-final">
+                        <p class="case-eyebrow">Final result & impact</p>
+                        <p class="case-prose" style="font-size: 1.2rem; line-height: 1.55; margin: 0 auto 2.5rem; max-width: 60ch;">
+                            A platform that lets you discover creators using natural language, receive data-driven recommendations, and make decisions with more clarity.
                         </p>
-                        <div class="grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem;">
-                            <div style="text-align: left;">
-                                <h4 style="color: white; margin-bottom: 1rem;">Impact</h4>
-                                <ul style="list-style: none; padding: 0; color: var(--text-secondary); font-size: 1rem;">
-                                    <li style="margin-bottom: 0.5rem;">&bull; Reduced discovery complexity</li>
-                                    <li style="margin-bottom: 0.5rem;">&bull; Natural and intuitive experience</li>
-                                    <li style="margin-bottom: 0.5rem;">&bull; Foundation for intelligent matchmaking</li>
+                        <div class="case-grid-2" style="text-align: left; margin-bottom: 2.5rem;">
+                            <div>
+                                <p class="case-eyebrow">Impact</p>
+                                <ul class="case-arrow-list">
+                                    <li>Reduced complexity in discovery</li>
+                                    <li>Natural, intuitive experience</li>
+                                    <li>Foundation for intelligent matchmaking</li>
                                 </ul>
                             </div>
-                            <div style="text-align: left;">
-                                <h4 style="color: white; margin-bottom: 1rem;">Learnings</h4>
-                                <p style="color: var(--text-secondary); font-size: 1rem; font-style: italic;">
-                                    "Design for AI is not about adding technology. It's about removing complexity."
+                            <div>
+                                <p class="case-eyebrow">Learning</p>
+                                <p class="case-prose" style="font-style: italic;">
+                                    "Designing for AI isn't about adding technology. It's about removing complexity."
                                 </p>
                             </div>
                         </div>
-                        <a href="https://influo.me/" target="_blank" class="btn btn-primary">Visit influo.me</a>
+                        <a href="https://influo.me/" target="_blank" rel="noopener" class="btn btn-primary">Visit influo.me</a>
                     </div>
                 </div>
 
-                <!-- Positioning Section -->
-                <div class="case-section" style="margin-bottom: 5rem; text-align: center;">
-                    <p style="color: var(--text-secondary); letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 1.5rem;">Positioning</p>
-                    <h4 style="font-size: 2rem; max-width: 800px; margin: 0 auto; color: white;">This project is not just design. It's the intersection between product, engineering, and artificial intelligence.</h4>
+                <!-- Positioning -->
+                <div class="case-section" style="text-align: center;">
+                    <p class="case-eyebrow">Positioning</p>
+                    <p class="case-prose" style="font-size: 1.4rem; max-width: 800px; margin: 0 auto; color: var(--text-primary); line-height: 1.4;">
+                        This project isn't just design. It's the intersection of product, engineering, and artificial intelligence.
+                    </p>
                 </div>
 
-                <div class="case-cta" style="text-align: center; margin-bottom: 5rem; margin-top: 5rem;">
-                    <a href="en-contact.html" class="btn btn-primary">Like my approach? Let's talk</a>
+                <div class="case-cta">
+                    <a href="en-contact.html" class="btn btn-primary">Liked the approach? Let's talk</a>
                 </div>
+
             </div>
         </section>
     </main>

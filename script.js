@@ -32,31 +32,10 @@ fadeElements.forEach(element => {
     appearOnScroll.observe(element);
 });
 
-// Interactive Mouse Glow Effect
-const mouseGlow = document.getElementById('mouse-glow');
-
-document.addEventListener('mousemove', (e) => {
-    const x = e.clientX;
-    const y = e.clientY;
-    
-    mouseGlow.style.left = `${x}px`;
-    mouseGlow.style.top = `${y}px`;
-});
-
-// Add hover effect to interactive elements for the mouse glow
-const interactiveElements = document.querySelectorAll('a, button, .glass-card, .skill-item');
-
-interactiveElements.forEach(el => {
-    el.addEventListener('mouseenter', () => {
-        mouseGlow.style.width = '600px';
-        mouseGlow.style.height = '600px';
-        mouseGlow.style.background = 'radial-gradient(circle, rgba(233, 0, 116, 0.15) 0%, transparent 60%)';
-    });
-    
-    el.addEventListener('mouseleave', () => {
-        mouseGlow.style.width = '400px';
-        mouseGlow.style.height = '400px';
-        mouseGlow.style.background = 'radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 60%)';
+// Stagger index for grid children with fade-in
+document.querySelectorAll('.media-grid, .edu-grid, .skills-cloud, .hero-tags, .achievement-list, .contact-links').forEach(grid => {
+    Array.from(grid.children).forEach((child, i) => {
+        child.style.setProperty('--stagger-index', i);
     });
 });
 

@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
     <link rel="stylesheet" href="styles.css">
@@ -18,8 +18,6 @@
 
 <body>
     <div class="glow-bg"></div>
-    <div class="mouse-glow" id="mouse-glow"></div>
-
     <nav class="navbar">
         <div class="nav-content">
             <a href="index.html" class="logo">JR.</a>
@@ -50,47 +48,355 @@
     </nav>
 
     <main>
-        <section class="case-study" style="padding-top: 150px;">
+        <section class="case-study">
             <div class="container fade-in">
-                <a href="cases.html" class="inline-link" style="margin-bottom: 2rem; display: inline-block;">&larr; Voltar para Cases</a>
-                
-                <h1 class="title" style="margin-bottom: 1rem;">Proposta Novo Menu e Homepage</h1>
-                <p class="subtitle" style="font-size: 1.5rem; margin-bottom: 3rem;">XP Investimentos</p>
 
-                <div class="case-content grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 5rem;">
-                    <div class="case-text">
-                        <h3 class="small-title">Objetivo</h3>
-                        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">
-                            A XP é uma empresa que vem crescendo rapidamente, e com isso, eles tiveram que adicionar muito conteúdo à sua página inicial, o que pode tornar a navegação difícil.
-                        </p>
-                        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">
-                            Por isso, criei uma proposta de menu e homepage para a XP, visando tornar a navegação mais fácil para o usuário.
-                        </p>
-                        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">
-                            O menu proposto reúne informações relevantes em categorias simples, permitindo que o usuário encontre o que precisa com facilidade. A homepage foi projetada para destacar os principais recursos da XP, de modo a facilitar a descoberta de novos conteúdos e serviços. 
-                        </p>
-                        <p style="color: var(--text-secondary); font-size: 1.1rem;">
-                            Além disso, a página foi desenvolvida para tornar a experiência do usuário mais intuitiva, com elementos interativos que ajudam os usuários a encontrar o que procuram rapidamente.
-                        </p>
+                <a href="cases.html" class="inline-link case-back">&larr; Voltar para Cases</a>
+
+                <p class="case-eyebrow">Case Study · Redesenho de Produto</p>
+                <h1 class="case-title">Proposta Novo Menu e Homepage</h1>
+                <p class="case-subtitle">XP Investimentos — simplificando a experiência financeira para usuários da plataforma.</p>
+
+                <!-- KEY INFO -->
+                <div class="case-info-strip">
+                    <div class="case-info-item">
+                        <p class="case-info-item__label">Foco</p>
+                        <p class="case-info-item__value">Navegação e arquitetura de informação</p>
                     </div>
-                    <div class="case-visual">
-                        <div class="glass-card" style="padding: 1rem; display: flex; justify-content: center; align-items: center;">
-                            <img src="public/images/xp-case-preview.png" alt="XP Interface Design" style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                    <div class="case-info-item">
+                        <p class="case-info-item__label">Entregáveis</p>
+                        <p class="case-info-item__value">Menu reestruturado · Homepage redesenhada</p>
+                    </div>
+                    <div class="case-info-item">
+                        <p class="case-info-item__label">Plataforma</p>
+                        <p class="case-info-item__value">Mobile-first, foco em descoberta</p>
+                    </div>
+                </div>
+
+                <!-- HERO VISUAL -->
+                <div class="case-section">
+                    <div class="mockup-showcase">
+                        <div class="phone-mock">
+                            <div class="phone-mock__frame">
+                                <div class="phone-mock__notch"></div>
+                                <div class="phone-mock__screen">
+                                    <div class="phone-status">
+                                        <span>9:41</span>
+                                        <div class="phone-status__right">
+                                            <div class="phone-status__bars" aria-hidden="true">
+                                                <span></span><span></span><span></span><span></span>
+                                            </div>
+                                            <span>5G</span>
+                                            <div class="phone-status__battery" aria-hidden="true"><span></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="phone-greet">
+                                        <div>
+                                            <p class="phone-greet__label">Bom dia,</p>
+                                            <p class="phone-greet__name">Joana</p>
+                                        </div>
+                                        <div class="phone-avatar" aria-hidden="true">JR</div>
+                                    </div>
+
+                                    <div class="phone-balance">
+                                        <p class="phone-balance__label">Patrimônio total</p>
+                                        <p class="phone-balance__value">R$ 47.832,15</p>
+                                        <div class="phone-balance__delta">
+                                            <span class="phone-balance__delta-pill">+ 2,84%</span>
+                                            <span class="phone-balance__delta-meta">hoje · R$ 1.318,42</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="phone-actions">
+                                        <div class="phone-action">
+                                            <span class="phone-action__icon" aria-hidden="true">
+                                                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+                                            </span>
+                                            <span class="phone-action__label">Investir</span>
+                                        </div>
+                                        <div class="phone-action">
+                                            <span class="phone-action__icon" aria-hidden="true">
+                                                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>
+                                            </span>
+                                            <span class="phone-action__label">Carteira</span>
+                                        </div>
+                                        <div class="phone-action">
+                                            <span class="phone-action__icon" aria-hidden="true">
+                                                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h10"/><path d="M4 18h16"/></svg>
+                                            </span>
+                                            <span class="phone-action__label">Renda Fixa</span>
+                                        </div>
+                                        <div class="phone-action">
+                                            <span class="phone-action__icon" aria-hidden="true">
+                                                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18"/><path d="M3 12h18"/></svg>
+                                            </span>
+                                            <span class="phone-action__label">Mercado</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="phone-section-head">
+                                        <span class="phone-section-head__title">Atividade recente</span>
+                                        <span class="phone-section-head__link">Ver tudo →</span>
+                                    </div>
+                                    <div class="phone-list">
+                                        <div class="phone-row">
+                                            <span class="phone-row__icon">TS</span>
+                                            <div>
+                                                <p class="phone-row__title">Tesouro IPCA+ 2029</p>
+                                                <p class="phone-row__meta">Renda Fixa · 21 abr</p>
+                                            </div>
+                                            <div class="phone-row__value">
+                                                <p class="phone-row__amount phone-row__amount--positive">+ R$ 312,40</p>
+                                                <p class="phone-row__pct">+0,67%</p>
+                                            </div>
+                                        </div>
+                                        <div class="phone-row">
+                                            <span class="phone-row__icon">B3</span>
+                                            <div>
+                                                <p class="phone-row__title">PETR4 · Petrobras PN</p>
+                                                <p class="phone-row__meta">Ações · 21 abr</p>
+                                            </div>
+                                            <div class="phone-row__value">
+                                                <p class="phone-row__amount">R$ 38,72</p>
+                                                <p class="phone-row__pct">−0,42%</p>
+                                            </div>
+                                        </div>
+                                        <div class="phone-row">
+                                            <span class="phone-row__icon">FI</span>
+                                            <div>
+                                                <p class="phone-row__title">XP Long Biased FIM</p>
+                                                <p class="phone-row__meta">Multimercado · 19 abr</p>
+                                            </div>
+                                            <div class="phone-row__value">
+                                                <p class="phone-row__amount phone-row__amount--positive">+ R$ 87,15</p>
+                                                <p class="phone-row__pct">+1,18%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="phone-home-bar" aria-hidden="true"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="prototype-section" style="margin-bottom: 5rem;">
-                    <h3 class="section-title">Protótipo</h3>
-                    <div class="glass-card" style="padding: 3rem; text-align: center;">
-                        <img src="public/images/xp-case-preview.png" alt="Protótipo Mobile XP" style="max-width: 500px; width: 100%; border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.6);">
-                        <p style="margin-top: 2rem; color: var(--text-secondary);">Interface mobile focada em usabilidade e acesso rápido a investimentos e serviços bancários.</p>
+                <!-- Contexto -->
+                <div class="case-rule">
+                    <span class="case-rule__label">Contexto</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <div class="case-grid-2">
+                        <div>
+                            <p class="case-prose">
+                                A XP é uma empresa que vem crescendo rapidamente. Com isso, foi preciso adicionar muito conteúdo à página inicial — o que pode tornar a navegação difícil para o usuário.
+                            </p>
+                            <p class="case-prose">
+                                Criei uma proposta de menu e homepage para a XP visando tornar a navegação mais fácil e fazer com que o conteúdo certo chegasse ao usuário no momento certo.
+                            </p>
+                        </div>
+                        <ul class="case-arrow-list">
+                            <li>Crescimento acelerado de produtos</li>
+                            <li>Excesso de conteúdo na home</li>
+                            <li>Navegação fragmentada</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="case-cta" style="text-align: center; margin-bottom: 5rem;">
+                <!-- Desafio -->
+                <div class="case-rule">
+                    <span class="case-rule__label">O Desafio</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <div class="case-callout">
+                        <p class="case-callout__label">Pergunta-chave</p>
+                        <p class="case-callout__text">Como organizar um portfólio em expansão sem afastar o usuário do que ele realmente precisa?</p>
+                    </div>
+                </div>
+
+                <!-- Abordagem -->
+                <div class="case-rule">
+                    <span class="case-rule__label">Abordagem</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <p class="case-prose" style="margin-bottom: 3rem;">
+                        Reorganizei o menu em torno de categorias simples e desenhei uma homepage que prioriza a descoberta — não o catálogo. O objetivo é guiar o usuário até o produto certo em poucos passos, com sinais visuais que reduzem a carga de decisão.
+                    </p>
+
+                    <div class="case-feature-grid">
+                        <div class="case-feature">
+                            <h4 class="case-feature__title">Menu por categorias</h4>
+                            <p class="case-feature__desc">Informações relevantes agrupadas em categorias simples — o usuário encontra o que precisa com facilidade.</p>
+                        </div>
+                        <div class="case-feature">
+                            <h4 class="case-feature__title">Homepage com hierarquia</h4>
+                            <p class="case-feature__desc">Recursos principais da XP destacados pra facilitar a descoberta de novos conteúdos e serviços.</p>
+                        </div>
+                        <div class="case-feature">
+                            <h4 class="case-feature__title">Elementos interativos</h4>
+                            <p class="case-feature__desc">Sinais visuais e interações que ajudam o usuário a encontrar o que procura rapidamente.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Protótipo -->
+                <div class="case-rule">
+                    <span class="case-rule__label">Protótipo</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <div class="mockup-showcase">
+                        <div class="phone-mock">
+                            <div class="phone-mock__frame">
+                                <div class="phone-mock__notch"></div>
+                                <div class="phone-mock__screen">
+                                    <div class="phone-status">
+                                        <span>9:41</span>
+                                        <div class="phone-status__right">
+                                            <div class="phone-status__bars" aria-hidden="true">
+                                                <span></span><span></span><span></span><span></span>
+                                            </div>
+                                            <span>5G</span>
+                                            <div class="phone-status__battery" aria-hidden="true"><span></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="phone-greet">
+                                        <div>
+                                            <p class="phone-greet__label">Bom dia,</p>
+                                            <p class="phone-greet__name">Joana</p>
+                                        </div>
+                                        <div class="phone-avatar" aria-hidden="true">JR</div>
+                                    </div>
+
+                                    <div class="phone-balance">
+                                        <p class="phone-balance__label">Patrimônio total</p>
+                                        <p class="phone-balance__value">R$ 47.832,15</p>
+                                        <div class="phone-balance__delta">
+                                            <span class="phone-balance__delta-pill">+ 2,84%</span>
+                                            <span class="phone-balance__delta-meta">hoje · R$ 1.318,42</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="phone-actions">
+                                        <div class="phone-action">
+                                            <span class="phone-action__icon" aria-hidden="true">
+                                                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+                                            </span>
+                                            <span class="phone-action__label">Investir</span>
+                                        </div>
+                                        <div class="phone-action">
+                                            <span class="phone-action__icon" aria-hidden="true">
+                                                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>
+                                            </span>
+                                            <span class="phone-action__label">Carteira</span>
+                                        </div>
+                                        <div class="phone-action">
+                                            <span class="phone-action__icon" aria-hidden="true">
+                                                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h10"/><path d="M4 18h16"/></svg>
+                                            </span>
+                                            <span class="phone-action__label">Renda Fixa</span>
+                                        </div>
+                                        <div class="phone-action">
+                                            <span class="phone-action__icon" aria-hidden="true">
+                                                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18"/><path d="M3 12h18"/></svg>
+                                            </span>
+                                            <span class="phone-action__label">Mercado</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="phone-section-head">
+                                        <span class="phone-section-head__title">Atividade recente</span>
+                                        <span class="phone-section-head__link">Ver tudo →</span>
+                                    </div>
+                                    <div class="phone-list">
+                                        <div class="phone-row">
+                                            <span class="phone-row__icon">TS</span>
+                                            <div>
+                                                <p class="phone-row__title">Tesouro IPCA+ 2029</p>
+                                                <p class="phone-row__meta">Renda Fixa · 21 abr</p>
+                                            </div>
+                                            <div class="phone-row__value">
+                                                <p class="phone-row__amount phone-row__amount--positive">+ R$ 312,40</p>
+                                                <p class="phone-row__pct">+0,67%</p>
+                                            </div>
+                                        </div>
+                                        <div class="phone-row">
+                                            <span class="phone-row__icon">B3</span>
+                                            <div>
+                                                <p class="phone-row__title">PETR4 · Petrobras PN</p>
+                                                <p class="phone-row__meta">Ações · 21 abr</p>
+                                            </div>
+                                            <div class="phone-row__value">
+                                                <p class="phone-row__amount">R$ 38,72</p>
+                                                <p class="phone-row__pct">−0,42%</p>
+                                            </div>
+                                        </div>
+                                        <div class="phone-row">
+                                            <span class="phone-row__icon">FI</span>
+                                            <div>
+                                                <p class="phone-row__title">XP Long Biased FIM</p>
+                                                <p class="phone-row__meta">Multimercado · 19 abr</p>
+                                            </div>
+                                            <div class="phone-row__value">
+                                                <p class="phone-row__amount phone-row__amount--positive">+ R$ 87,15</p>
+                                                <p class="phone-row__pct">+1,18%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="phone-home-bar" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resultado -->
+                <div class="case-rule">
+                    <span class="case-rule__label">Resultado</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <div class="case-final">
+                        <p class="case-eyebrow">Impacto da proposta</p>
+                        <p class="case-prose" style="font-size: 1.15rem; line-height: 1.55; margin: 0 auto 2.5rem; max-width: 60ch;">
+                            Uma navegação mais fácil, descoberta mais simples e uma experiência mais intuitiva — guiando o usuário ao produto certo, no momento certo.
+                        </p>
+                        <div class="case-grid-2" style="text-align: left;">
+                            <div>
+                                <p class="case-eyebrow">Antes</p>
+                                <ul class="case-arrow-list">
+                                    <li>Conteúdo acumulado na home</li>
+                                    <li>Navegação difícil de escanear</li>
+                                    <li>Recursos importantes pouco visíveis</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="case-eyebrow">Depois</p>
+                                <ul class="case-arrow-list">
+                                    <li>Categorias simples e claras</li>
+                                    <li>Hierarquia visual restabelecida</li>
+                                    <li>Descoberta guiada pelos recursos-chave</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-cta">
                     <a href="contact.html" class="btn btn-primary">Gostou do projeto? Vamos conversar</a>
                 </div>
+
             </div>
         </section>
     </main>
