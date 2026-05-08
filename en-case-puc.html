@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case: PUC-SP Academic Portal | Joana Ritter</title>
+    <meta name="description"
+        content="Case study PUC-SP Academic Portal — qualitative research and mobile redesign of the academic information portal for students.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <div class="glow-bg"></div>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="en.html" class="logo">JR.</a>
+            <ul class="nav-links" id="primary-nav">
+                <li><a href="en.html">Home</a></li>
+                <li><a href="en-cases.html" class="active">Cases</a></li>
+                <li><a href="en-about.html">Resume</a></li>
+                <li><a href="en-contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-extras">
+                <div class="lang-switch">
+                    <a href="case-puc.html" class="lang-btn" aria-label="Mudar para Português" title="Português">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <span>PT</span>
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-controls="primary-nav" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+        <section class="case-study">
+            <div class="container fade-in">
+
+                <a href="en-cases.html" class="case-back">← Back to Cases</a>
+
+                <p class="case-eyebrow">Case Study · UX Research</p>
+                <h1 class="case-title">PUC-SP Academic Portal</h1>
+                <p class="case-subtitle">Redesign of the academic experience focused on organization, accessibility and intuitive navigation.</p>
+
+                <div class="case-hero__tags" style="margin-bottom: 2.5rem;">
+                    <span class="tag">UX Research</span>
+                    <span class="tag">Product Design</span>
+                    <span class="tag">Mobile UX</span>
+                    <span class="tag">Information Architecture</span>
+                    <span class="tag">Academic Platform</span>
+                </div>
+
+                <!-- HERO VISUAL -->
+                <div class="case-section">
+                    <div class="puc-screens">
+                        <div class="puc-phone">
+                            <div class="puc-phone__frame">
+                                <div class="puc-phone__notch"></div>
+                                <div class="puc-phone__screen">
+                                    <div class="puc-screen__header">
+                                        <span class="puc-screen__logo">PUC</span>
+                                        <div class="puc-screen__hamburger"><span></span><span></span><span></span></div>
+                                    </div>
+                                    <div class="puc-screen__login">
+                                        <div class="puc-screen__login-logo">PUC</div>
+                                        <div class="puc-screen__login-name">Academic Portal</div>
+                                        <div class="puc-screen__input">student name</div>
+                                        <div class="puc-screen__input">RA</div>
+                                        <div class="puc-screen__btn">sign in</div>
+                                        <span class="puc-screen__login-link">Forgot password</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="puc-phone__label">Login</p>
+                        </div>
+                        <div class="puc-phone">
+                            <div class="puc-phone__frame">
+                                <div class="puc-phone__notch"></div>
+                                <div class="puc-phone__screen">
+                                    <div class="puc-screen__header">
+                                        <span class="puc-screen__logo">PUC</span>
+                                        <div class="puc-screen__hamburger"><span></span><span></span><span></span></div>
+                                    </div>
+                                    <div class="puc-screen__greet">Hello, Beatriz</div>
+                                    <div class="puc-screen__alert">October invoice still open</div>
+                                    <div class="puc-screen__news-card">
+                                        <div class="puc-screen__news-card-meta">Campus · Oct 22</div>
+                                        <div class="puc-screen__news-card-title">TUCA</div>
+                                        <div class="puc-screen__news-card-text">Monthly events</div>
+                                    </div>
+                                    <div class="puc-screen__news-card">
+                                        <div class="puc-screen__news-card-meta">Event · Oct 30</div>
+                                        <div class="puc-screen__news-card-title">Tech Week</div>
+                                        <div class="puc-screen__news-card-text">Open enrollment</div>
+                                    </div>
+                                    <nav class="puc-screen__tabbar">
+                                        <div class="puc-screen__tab"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7l6-4.5L14 7v6.5a1 1 0 01-1 1H3a1 1 0 01-1-1V7z"/><path d="M6.5 14.5v-4h3v4"/></svg></span><span>Home</span></div>
+                                        <div class="puc-screen__tab puc-screen__tab--active"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7a4.5 4.5 0 019 0v3l1 1.5h-11l1-1.5V7z"/><path d="M6.5 13.5a1.5 1.5 0 003 0"/></svg></span><span>News</span></div>
+                                        <div class="puc-screen__tab"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="11" height="10" rx="1"/><path d="M2.5 6.5h11"/><path d="M5.5 2v3"/><path d="M10.5 2v3"/></svg></span><span>Agenda</span></div>
+                                        <div class="puc-screen__tab"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4.5" width="12" height="8.5" rx="1"/><path d="M14 8h-3a1.5 1.5 0 100 3h3"/></svg></span><span>Bills</span></div>
+                                        <div class="puc-screen__tab"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="currentColor"><circle cx="3.5" cy="8" r="1.2"/><circle cx="8" cy="8" r="1.2"/><circle cx="12.5" cy="8" r="1.2"/></svg></span><span>More</span></div>
+                                    </nav>
+                                </div>
+                            </div>
+                            <p class="puc-phone__label">News</p>
+                        </div>
+                        <div class="puc-phone">
+                            <div class="puc-phone__frame">
+                                <div class="puc-phone__notch"></div>
+                                <div class="puc-phone__screen">
+                                    <div class="puc-screen__header">
+                                        <span class="puc-screen__logo">PUC</span>
+                                        <div class="puc-screen__hamburger"><span></span><span></span><span></span></div>
+                                    </div>
+                                    <div class="puc-screen__title">Financial</div>
+                                    <div class="puc-screen__summary">
+                                        <div class="puc-screen__summary-label">Next due</div>
+                                        <div class="puc-screen__summary-value">Nov 10 · R$ 350.00</div>
+                                    </div>
+                                    <div class="puc-screen__row">July</div>
+                                    <div class="puc-screen__row">August</div>
+                                    <div class="puc-screen__row">September</div>
+                                    <div class="puc-screen__row puc-screen__row--open">
+                                        October
+                                        <span class="puc-screen__row-meta">OPEN · R$ 350.00</span>
+                                        <span class="puc-screen__row-cta">Generate invoice</span>
+                                    </div>
+                                    <nav class="puc-screen__tabbar">
+                                        <div class="puc-screen__tab"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7l6-4.5L14 7v6.5a1 1 0 01-1 1H3a1 1 0 01-1-1V7z"/><path d="M6.5 14.5v-4h3v4"/></svg></span><span>Home</span></div>
+                                        <div class="puc-screen__tab"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7a4.5 4.5 0 019 0v3l1 1.5h-11l1-1.5V7z"/><path d="M6.5 13.5a1.5 1.5 0 003 0"/></svg></span><span>News</span></div>
+                                        <div class="puc-screen__tab"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="11" height="10" rx="1"/><path d="M2.5 6.5h11"/><path d="M5.5 2v3"/><path d="M10.5 2v3"/></svg></span><span>Agenda</span></div>
+                                        <div class="puc-screen__tab puc-screen__tab--active"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4.5" width="12" height="8.5" rx="1"/><path d="M14 8h-3a1.5 1.5 0 100 3h3"/></svg></span><span>Bills</span></div>
+                                        <div class="puc-screen__tab"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="currentColor"><circle cx="3.5" cy="8" r="1.2"/><circle cx="8" cy="8" r="1.2"/><circle cx="12.5" cy="8" r="1.2"/></svg></span><span>More</span></div>
+                                    </nav>
+                                </div>
+                            </div>
+                            <p class="puc-phone__label">Financial</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INFO STRIP -->
+                <div class="case-info-strip">
+                    <div class="case-info-item">
+                        <p class="case-info-item__label">Context</p>
+                        <p class="case-info-item__value">Mobile redesign of the academic portal</p>
+                    </div>
+                    <div class="case-info-item">
+                        <p class="case-info-item__label">Methodology</p>
+                        <p class="case-info-item__value">Qualitative research and Value Proposition Canvas</p>
+                    </div>
+                    <div class="case-info-item">
+                        <p class="case-info-item__label">Platform</p>
+                        <p class="case-info-item__value">Mobile, smartphone-first</p>
+                    </div>
+                </div>
+
+                <!-- OVERVIEW -->
+                <div class="case-rule">
+                    <span class="case-rule__label">Overview</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <p class="case-prose">
+                        The PUC-SP academic portal had navigation problems, information that was hard to reach and a low usability perception among students. The starting point of the project was to listen, in the students' own voice, where the experience broke in their daily lives.
+                    </p>
+                    <p class="case-prose">
+                        The goal of the redesign was to simplify access to the most-searched information: grades, financial status, schedule and contact channels with the university.
+                    </p>
+
+                    <div class="case-callout" style="margin-top: 2.5rem;">
+                        <p class="case-callout__label">Premise</p>
+                        <p class="case-callout__text">
+                            Students were unable to find critical academic information quickly.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- PROBLEM -->
+                <div class="case-rule">
+                    <span class="case-rule__label">The Problem</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <div class="case-grid-mixed">
+                        <div class="puc-problem-panel">
+                            <div class="puc-problem-panel__bar">
+                                <div class="puc-problem-panel__dots"><span></span><span></span><span></span></div>
+                                <span class="puc-problem-panel__url">portalacademico.pucsp.br</span>
+                            </div>
+                            <div class="puc-problem-panel__body">
+                                <div class="puc-problem-panel__sidebar">
+                                    <div class="puc-problem-panel__sidebar-item">Notice Board</div>
+                                    <div class="puc-problem-panel__sidebar-item">Calendar</div>
+                                    <div class="puc-problem-panel__sidebar-item">Personal Data</div>
+                                    <div class="puc-problem-panel__sidebar-item puc-problem-panel__sidebar-item--active">Grades</div>
+                                    <div class="puc-problem-panel__sidebar-item">Grades / Absences</div>
+                                    <div class="puc-problem-panel__sidebar-item">Assignments</div>
+                                    <div class="puc-problem-panel__sidebar-item">Daily Frequency</div>
+                                    <div class="puc-problem-panel__sidebar-item">Class Schedule</div>
+                                    <div class="puc-problem-panel__sidebar-item">Academic Enrollment</div>
+                                    <div class="puc-problem-panel__sidebar-item">Requests</div>
+                                    <div class="puc-problem-panel__sidebar-item">Curriculum Matrix</div>
+                                    <div class="puc-problem-panel__sidebar-item">Lesson Plan</div>
+                                    <div class="puc-problem-panel__sidebar-item">Required Documents</div>
+                                </div>
+                                <div class="puc-problem-panel__content">
+                                    <div class="puc-problem-panel__field">
+                                        <span class="puc-problem-panel__field-key">Course</span>
+                                        <span class="puc-problem-panel__field-val">UX Digital · User Experience</span>
+                                    </div>
+                                    <div class="puc-problem-panel__field">
+                                        <span class="puc-problem-panel__field-key">Term</span>
+                                        <span class="puc-problem-panel__field-val">2017C2</span>
+                                    </div>
+                                    <div class="puc-problem-panel__section-label">Grades</div>
+                                    <div class="puc-problem-panel__empty">No grades registered</div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="case-arrow-list">
+                            <li>Hard to locate information such as room number, contact phones, second copy of the invoice and class schedule</li>
+                            <li>Confusing and unintuitive navigation, with small and poorly arranged icons</li>
+                            <li>Decentralized information, scattered across several menu levels</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- RESEARCH -->
+                <div class="case-rule">
+                    <span class="case-rule__label">Research & Insights</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <p class="case-prose" style="margin-bottom: 2.5rem;">
+                        Qualitative research with 8 students and former students of PUC-SP, conducted with forms and open questions about portal access, devices used and impressions of the current experience.
+                    </p>
+
+                    <div class="puc-research-panel">
+                        <div class="puc-research-stats">
+                            <div class="puc-research-stat">
+                                <span class="puc-research-stat__label">Regular access</span>
+                                <span class="puc-research-stat__value">50%</span>
+                                <span class="puc-research-stat__caption">don't access the portal regularly</span>
+                            </div>
+                            <div class="puc-research-stat">
+                                <span class="puc-research-stat__label">Device</span>
+                                <span class="puc-research-stat__value">2× +</span>
+                                <span class="puc-research-stat__caption">phone vs notebook or tablet</span>
+                            </div>
+                            <div class="puc-research-stat">
+                                <span class="puc-research-stat__label">Top searches</span>
+                                <span class="puc-research-stat__value">3</span>
+                                <span class="puc-research-stat__caption">grades, invoices and university info</span>
+                            </div>
+                        </div>
+                        <div class="puc-research-bars">
+                            <div class="puc-research-bars-title">Respondent ages</div>
+                            <div class="puc-research-bar" style="height: 35%;"><span class="puc-research-bar__pct">12.5%</span><span class="puc-research-bar__label">19</span></div>
+                            <div class="puc-research-bar" style="height: 70%;"><span class="puc-research-bar__pct">25%</span><span class="puc-research-bar__label">20</span></div>
+                            <div class="puc-research-bar" style="height: 35%;"><span class="puc-research-bar__pct">12.5%</span><span class="puc-research-bar__label">22</span></div>
+                            <div class="puc-research-bar" style="height: 35%;"><span class="puc-research-bar__pct">12.5%</span><span class="puc-research-bar__label">25</span></div>
+                            <div class="puc-research-bar" style="height: 35%;"><span class="puc-research-bar__pct">12.5%</span><span class="puc-research-bar__label">26</span></div>
+                            <div class="puc-research-bar" style="height: 35%;"><span class="puc-research-bar__pct">12.5%</span><span class="puc-research-bar__label">28</span></div>
+                            <div class="puc-research-bar" style="height: 35%;"><span class="puc-research-bar__pct">12.5%</span><span class="puc-research-bar__label">+</span></div>
+                        </div>
+                    </div>
+
+                    <div class="case-callout" style="margin-top: 2.5rem;">
+                        <p class="case-callout__label">Summary</p>
+                        <p class="case-callout__text">
+                            Most respondents described the experience as confusing and outdated, and asked for a simpler interface, better-defined categories and an online support chat.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- PERSONA -->
+                <div class="case-rule">
+                    <span class="case-rule__label">Persona</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <div class="puc-persona-mock">
+                        <div class="puc-persona-mock__avatar">
+                            <div class="puc-persona-mock__circle">B</div>
+                            <div class="puc-persona-mock__name">Beatriz</div>
+                            <div class="puc-persona-mock__age">20 years</div>
+                        </div>
+                        <div class="puc-persona-mock__details">
+                            <div class="puc-persona-mock__field">
+                                <div class="puc-persona-mock__field-label">City</div>
+                                <div class="puc-persona-mock__field-value">São Paulo</div>
+                            </div>
+                            <div class="puc-persona-mock__field">
+                                <div class="puc-persona-mock__field-label">Course</div>
+                                <div class="puc-persona-mock__field-value">Design · 3rd semester</div>
+                            </div>
+                            <div class="puc-persona-mock__field">
+                                <div class="puc-persona-mock__field-label">Profession</div>
+                                <div class="puc-persona-mock__field-value">Student and intern</div>
+                            </div>
+                            <div class="puc-persona-mock__field">
+                                <div class="puc-persona-mock__field-label">Attitude</div>
+                                <div class="puc-persona-mock__field-value">Uses smartphone and tablet for social media and academic data</div>
+                            </div>
+                            <div class="puc-persona-mock__field">
+                                <div class="puc-persona-mock__field-label">Routine</div>
+                                <div class="puc-persona-mock__field-value">Works mornings, studies at night, public transit</div>
+                            </div>
+                            <div class="puc-persona-mock__field">
+                                <div class="puc-persona-mock__field-label">Portal access</div>
+                                <div class="puc-persona-mock__field-value">Frequent, looks for grades, financial status and schedule</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VALUE PROPOSITION -->
+                <div class="case-rule">
+                    <span class="case-rule__label">Value Proposition</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <div class="puc-canvas-mock">
+                        <div class="puc-canvas-mock__col">
+                            <div class="puc-canvas-mock__col-title">Customer</div>
+                            <div>
+                                <div class="puc-canvas-mock__block-title">Student tasks</div>
+                                <p class="puc-canvas-mock__block-text">Print second copy of the invoice, find support phone numbers, check classroom and start of the course.</p>
+                            </div>
+                            <div>
+                                <div class="puc-canvas-mock__block-title">Pains</div>
+                                <p class="puc-canvas-mock__block-text">Late payments, no contact with the university, in-person trips to the registrar for simple information.</p>
+                            </div>
+                            <div>
+                                <div class="puc-canvas-mock__block-title">Gains</div>
+                                <p class="puc-canvas-mock__block-text">Payments on time and easy access to information whenever needed.</p>
+                            </div>
+                        </div>
+                        <div class="puc-canvas-mock__divider"></div>
+                        <div class="puc-canvas-mock__col">
+                            <div class="puc-canvas-mock__col-title">Value Map</div>
+                            <div>
+                                <div class="puc-canvas-mock__block-title">Products and services</div>
+                                <p class="puc-canvas-mock__block-text">Online support chat, list of PUC units, calendar and notifications, invoice generation and centralized academic and financial status.</p>
+                            </div>
+                            <div>
+                                <div class="puc-canvas-mock__block-title">Pain relievers</div>
+                                <p class="puc-canvas-mock__block-text">More control over academic and financial information, fast access to answers and peace of mind around the calendar.</p>
+                            </div>
+                            <div>
+                                <div class="puc-canvas-mock__block-title">Gain creators</div>
+                                <p class="puc-canvas-mock__block-text">Fewer late payments, less paperwork and more information management.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-feature-grid" style="margin-top: 2.5rem;">
+                        <div class="case-feature">
+                            <h4 class="case-feature__title">Student tasks</h4>
+                            <p class="case-feature__desc">Print second copy of the invoice, find support phone numbers, check classroom and start of the course.</p>
+                        </div>
+                        <div class="case-feature">
+                            <h4 class="case-feature__title">Pains</h4>
+                            <p class="case-feature__desc">Late payments, no contact with the university, in-person trips to the registrar for simple information.</p>
+                        </div>
+                        <div class="case-feature">
+                            <h4 class="case-feature__title">Solution</h4>
+                            <p class="case-feature__desc">Online chat, integrated calendar, unit list, invoice generation and centralized academic status.</p>
+                        </div>
+                        <div class="case-feature">
+                            <h4 class="case-feature__title">Expected gains</h4>
+                            <p class="case-feature__desc">Fewer late payments, less paperwork, more control and peace of mind around the academic calendar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SOLUTION / PROTOTYPE -->
+                <div class="case-rule">
+                    <span class="case-rule__label">Solution · Prototype</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <p class="case-prose" style="margin-bottom: 2.5rem;">
+                        The prototype organizes everything that was scattered on the old portal into a clear navigation, with a hamburger menu and direct categories: Student, Course, Agenda, Financial, News and Contact.
+                    </p>
+
+                    <ul class="case-arrow-list">
+                        <li>Simple login with student name and RA</li>
+                        <li>Home screen with priority news and notices</li>
+                        <li>Financial section with monthly status and direct invoice generation</li>
+                    </ul>
+
+                    <div class="puc-screens" style="margin-top: 3rem;">
+                        <div class="puc-phone">
+                            <div class="puc-phone__frame">
+                                <div class="puc-phone__notch"></div>
+                                <div class="puc-phone__screen">
+                                    <div class="puc-screen__header">
+                                        <span class="puc-screen__logo">PUC</span>
+                                        <div class="puc-screen__hamburger"><span></span><span></span><span></span></div>
+                                    </div>
+                                    <div class="puc-screen__menu-user">
+                                        <div class="puc-screen__menu-avatar">B</div>
+                                        <div class="puc-screen__menu-user-info">
+                                            <div class="puc-screen__menu-user-name">Beatriz</div>
+                                            <div class="puc-screen__menu-user-meta">RA 4201 ····</div>
+                                        </div>
+                                    </div>
+                                    <div class="puc-screen__menu">
+                                        <div class="puc-screen__menu-item"><span class="puc-screen__menu-icon"></span>home</div>
+                                        <div class="puc-screen__menu-item"><span class="puc-screen__menu-icon"></span>student</div>
+                                        <div class="puc-screen__menu-item"><span class="puc-screen__menu-icon"></span>course</div>
+                                        <div class="puc-screen__menu-item"><span class="puc-screen__menu-icon"></span>agenda</div>
+                                        <div class="puc-screen__menu-item"><span class="puc-screen__menu-icon"></span>financial</div>
+                                        <div class="puc-screen__menu-item"><span class="puc-screen__menu-icon"></span>news</div>
+                                        <div class="puc-screen__menu-item"><span class="puc-screen__menu-icon"></span>contact</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="puc-phone__label">Side menu</p>
+                        </div>
+                        <div class="puc-phone">
+                            <div class="puc-phone__frame">
+                                <div class="puc-phone__notch"></div>
+                                <div class="puc-phone__screen">
+                                    <div class="puc-screen__header">
+                                        <span class="puc-screen__logo">PUC</span>
+                                        <div class="puc-screen__hamburger"><span></span><span></span><span></span></div>
+                                    </div>
+                                    <div class="puc-screen__chat-attendant">
+                                        <strong>Carla Machado</strong>
+                                        Support agent · online
+                                    </div>
+                                    <div class="puc-screen__chat-time">Oct 22 · 14:32</div>
+                                    <div class="puc-screen__bubble">Hi Beatriz, how can I help?</div>
+                                    <div class="puc-screen__bubble puc-screen__bubble--mine">I need a copy of the invoice</div>
+                                    <div class="puc-screen__bubble">Just sent it to your e-mail</div>
+                                    <nav class="puc-screen__tabbar">
+                                        <div class="puc-screen__tab"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7l6-4.5L14 7v6.5a1 1 0 01-1 1H3a1 1 0 01-1-1V7z"/><path d="M6.5 14.5v-4h3v4"/></svg></span><span>Home</span></div>
+                                        <div class="puc-screen__tab"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7a4.5 4.5 0 019 0v3l1 1.5h-11l1-1.5V7z"/><path d="M6.5 13.5a1.5 1.5 0 003 0"/></svg></span><span>News</span></div>
+                                        <div class="puc-screen__tab"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="11" height="10" rx="1"/><path d="M2.5 6.5h11"/><path d="M5.5 2v3"/><path d="M10.5 2v3"/></svg></span><span>Agenda</span></div>
+                                        <div class="puc-screen__tab"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4.5" width="12" height="8.5" rx="1"/><path d="M14 8h-3a1.5 1.5 0 100 3h3"/></svg></span><span>Bills</span></div>
+                                        <div class="puc-screen__tab puc-screen__tab--active"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="currentColor"><circle cx="3.5" cy="8" r="1.2"/><circle cx="8" cy="8" r="1.2"/><circle cx="12.5" cy="8" r="1.2"/></svg></span><span>More</span></div>
+                                    </nav>
+                                </div>
+                            </div>
+                            <p class="puc-phone__label">Live support</p>
+                        </div>
+                        <div class="puc-phone">
+                            <div class="puc-phone__frame">
+                                <div class="puc-phone__notch"></div>
+                                <div class="puc-phone__screen">
+                                    <div class="puc-screen__header">
+                                        <span class="puc-screen__logo">PUC</span>
+                                        <div class="puc-screen__hamburger"><span></span><span></span><span></span></div>
+                                    </div>
+                                    <div class="puc-screen__title">Agenda</div>
+                                    <div class="puc-screen__cal-header">November · 2017</div>
+                                    <div class="puc-screen__cal-strip">
+                                        <div class="puc-screen__cal-day">09</div>
+                                        <div class="puc-screen__cal-day">10</div>
+                                        <div class="puc-screen__cal-day">11</div>
+                                        <div class="puc-screen__cal-day puc-screen__cal-day--active">12</div>
+                                        <div class="puc-screen__cal-day">13</div>
+                                        <div class="puc-screen__cal-day">14</div>
+                                        <div class="puc-screen__cal-day">15</div>
+                                    </div>
+                                    <div class="puc-screen__event">
+                                        <div class="puc-screen__event-time">18:30</div>
+                                        <div class="puc-screen__event-text">Talk · UX Digital</div>
+                                    </div>
+                                    <div class="puc-screen__event">
+                                        <div class="puc-screen__event-time">19:30</div>
+                                        <div class="puc-screen__event-text">Student council meeting</div>
+                                    </div>
+                                    <nav class="puc-screen__tabbar">
+                                        <div class="puc-screen__tab"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7l6-4.5L14 7v6.5a1 1 0 01-1 1H3a1 1 0 01-1-1V7z"/><path d="M6.5 14.5v-4h3v4"/></svg></span><span>Home</span></div>
+                                        <div class="puc-screen__tab"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7a4.5 4.5 0 019 0v3l1 1.5h-11l1-1.5V7z"/><path d="M6.5 13.5a1.5 1.5 0 003 0"/></svg></span><span>News</span></div>
+                                        <div class="puc-screen__tab puc-screen__tab--active"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="11" height="10" rx="1"/><path d="M2.5 6.5h11"/><path d="M5.5 2v3"/><path d="M10.5 2v3"/></svg></span><span>Agenda</span></div>
+                                        <div class="puc-screen__tab"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4.5" width="12" height="8.5" rx="1"/><path d="M14 8h-3a1.5 1.5 0 100 3h3"/></svg></span><span>Bills</span></div>
+                                        <div class="puc-screen__tab"><span class="puc-screen__tab-icon"><svg viewBox="0 0 16 16" fill="currentColor"><circle cx="3.5" cy="8" r="1.2"/><circle cx="8" cy="8" r="1.2"/><circle cx="12.5" cy="8" r="1.2"/></svg></span><span>More</span></div>
+                                    </nav>
+                                </div>
+                            </div>
+                            <p class="puc-phone__label">Agenda</p>
+                        </div>
+                    </div>
+
+                    <ul class="case-arrow-list" style="margin-top: 2rem;">
+                        <li>Side menu organized by category, no deep submenus</li>
+                        <li>In-app online support, without leaving the portal</li>
+                        <li>Academic calendar with schedule and daily commitments</li>
+                    </ul>
+                </div>
+
+                <!-- DESIGN DECISIONS -->
+                <div class="case-rule">
+                    <span class="case-rule__label">Design Decisions</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <div class="case-feature-grid">
+                        <div class="case-feature">
+                            <h4 class="case-feature__title">Simplification</h4>
+                            <p class="case-feature__desc">Fewer clicks to reach the information surfaced by the research.</p>
+                        </div>
+                        <div class="case-feature">
+                            <h4 class="case-feature__title">Hierarchy</h4>
+                            <p class="case-feature__desc">News, financial and agenda prioritized on the home and in the menu.</p>
+                        </div>
+                        <div class="case-feature">
+                            <h4 class="case-feature__title">Accessibility</h4>
+                            <p class="case-feature__desc">Mobile-first, generous touch targets and clear typographic contrast.</p>
+                        </div>
+                        <div class="case-feature">
+                            <h4 class="case-feature__title">Organization</h4>
+                            <p class="case-feature__desc">Six direct categories: Student, Course, Agenda, Financial, News and Contact.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IMPACT -->
+                <div class="case-rule">
+                    <span class="case-rule__label">Impact</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <div class="case-final">
+                        <p class="case-prose" style="font-size: 1.25rem; color: var(--text-primary); line-height: 1.45; max-width: 60ch; margin: 0 auto 2rem;">
+                            The project turned a fragmented academic experience into a more accessible and organized digital platform for PUC-SP students.
+                        </p>
+                        <ul class="case-arrow-list" style="max-width: 36rem; margin: 0 auto; text-align: left;">
+                            <li>Usability driven by real research findings</li>
+                            <li>Cleaner and more direct information architecture</li>
+                            <li>Faster access to the critical tasks of academic life</li>
+                            <li>Navigation without noise, with well-defined categories</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="case-cta">
+                    <a href="en-contact.html" class="btn btn-primary">Like the project? Let's talk</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Joana Ritter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
