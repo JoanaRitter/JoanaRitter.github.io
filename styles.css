@@ -2924,6 +2924,27 @@ strong {
     z-index: 2;
 }
 
+/* LED breathing — signals the laptop is on / dashboard is live */
+.laptop-mock__camera::after {
+    content: '';
+    position: absolute;
+    inset: 1px;
+    border-radius: 999px;
+    background: #4ADE80;
+    box-shadow: 0 0 4px rgba(74, 222, 128, 0.55);
+    opacity: 0.85;
+    animation: laptop-led 2.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes laptop-led {
+    0%, 100% { opacity: 0.35; transform: scale(0.85); }
+    50%      { opacity: 0.95; transform: scale(1);    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .laptop-mock__camera::after { animation: none; opacity: 0.65; }
+}
+
 .laptop-mock__screen {
     background: var(--laptop-screen-bg);
     border-radius: 4px;
@@ -3175,6 +3196,30 @@ strong {
     color: var(--p-text-tertiary);
     font-size: 0.55rem;
     background: var(--p-bg);
+    position: relative;
+}
+
+/* Blinking cursor in the focused login input — signals "this is real interface" */
+.puc-screen__input--focus {
+    border-color: var(--p-accent);
+}
+
+.puc-screen__input--focus::after {
+    content: '';
+    width: 1px;
+    height: 10px;
+    background: var(--p-accent);
+    margin-left: 4px;
+    animation: puc-caret 1.05s steps(2, end) infinite;
+}
+
+@keyframes puc-caret {
+    0%, 50%  { opacity: 1; }
+    50.01%, 100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .puc-screen__input--focus::after { animation: none; opacity: 1; }
 }
 
 .puc-screen__btn {
