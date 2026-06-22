@@ -1957,6 +1957,625 @@ strong {
     border-radius: 12px;
 }
 
+/* ============ Attar — Mini Design System + Coded Phone Flow ============ */
+.attar-ds {
+    --at-cyan: #00D4D4;
+    --at-purple: #8B4FCF;
+    --at-bg-1: #0A1A2A;
+    --at-bg-2: #1A0F2E;
+    --at-text: #F4F4F2;
+    --at-text-soft: rgba(244, 244, 242, 0.7);
+    --at-text-tertiary: rgba(244, 244, 242, 0.45);
+    --at-border: rgba(255, 255, 255, 0.08);
+    --at-surface: rgba(255, 255, 255, 0.04);
+
+    background:
+        radial-gradient(60% 100% at 0% 100%, rgba(0, 212, 212, 0.10) 0%, transparent 60%),
+        radial-gradient(60% 100% at 100% 0%, rgba(139, 79, 207, 0.10) 0%, transparent 60%),
+        linear-gradient(135deg, var(--at-bg-1) 0%, var(--at-bg-2) 100%);
+    border: 1px solid var(--at-border);
+    border-radius: 18px;
+    padding: 2rem;
+    color: var(--at-text);
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 2rem;
+}
+
+.attar-ds__col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.attar-ds__label {
+    font-family: var(--font-mono);
+    font-size: 0.66rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--at-text-tertiary);
+    margin: 0;
+}
+
+.attar-ds__swatches {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+}
+
+.attar-ds__swatch {
+    border-radius: 10px;
+    aspect-ratio: 4/3;
+    padding: 0.55rem 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    color: var(--at-text);
+    border: 1px solid var(--at-border);
+    position: relative;
+}
+
+.attar-ds__swatch span {
+    display: block;
+    line-height: 1.3;
+}
+
+.attar-ds__swatch--cyan    { background: var(--at-cyan); color: #062626; }
+.attar-ds__swatch--purple  { background: var(--at-purple); }
+.attar-ds__swatch--surface { background: #1B2A38; }
+.attar-ds__swatch--text    { background: var(--at-text); color: #0F1F22; }
+.attar-ds__swatch--text span { color: #0F1F22; }
+
+.attar-ds__type {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.attar-ds__type-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding-bottom: 0.55rem;
+    border-bottom: 1px dashed var(--at-border);
+}
+
+.attar-ds__type-row:last-child { border-bottom: none; padding-bottom: 0; }
+
+.attar-ds__sample {
+    color: var(--at-text);
+}
+
+.attar-ds__meta {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--at-text-tertiary);
+    white-space: nowrap;
+}
+
+.attar-ds__components {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.attar-ds__btn {
+    background: linear-gradient(135deg, var(--at-cyan) 0%, var(--at-purple) 100%);
+    color: #062626;
+    border: none;
+    border-radius: 999px;
+    padding: 0.65rem 1.1rem;
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    cursor: default;
+    text-align: center;
+}
+
+.attar-ds__chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.attar-ds__chip {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.55rem;
+    border-radius: 999px;
+    border: 1px solid var(--at-cyan);
+    color: var(--at-cyan);
+    background: rgba(0, 212, 212, 0.08);
+}
+
+.attar-ds__input {
+    border: 1px solid var(--at-border);
+    border-radius: 10px;
+    padding: 0.6rem 0.75rem;
+    font-size: 0.72rem;
+    color: var(--at-text-tertiary);
+    background: var(--at-surface);
+    position: relative;
+}
+
+.attar-ds__input::after {
+    content: '';
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 12px;
+    background: var(--at-cyan);
+    animation: attar-caret 1.05s steps(2, end) infinite;
+}
+
+@keyframes attar-caret {
+    0%, 50%       { opacity: 1; }
+    50.01%, 100%  { opacity: 0; }
+}
+
+@media (max-width: 900px) {
+    .attar-ds { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.5rem; }
+}
+
+/* ── Attar Flow — 4 coded phone screens ────────────────────── */
+.attar-flow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    background:
+        radial-gradient(60% 100% at 0% 100%, rgba(0, 212, 212, 0.12) 0%, transparent 60%),
+        radial-gradient(60% 100% at 100% 0%, rgba(139, 79, 207, 0.12) 0%, transparent 60%),
+        linear-gradient(135deg, #0A1A2A 0%, #1A0F2E 100%);
+    border: 1px solid var(--card-border);
+    border-radius: 22px;
+    padding: 3rem 1.5rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 1100px) {
+    .attar-flow { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .attar-flow { grid-template-columns: 1fr; padding: 2rem 1rem; }
+}
+
+.attar-phone {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.attar-phone__frame {
+    position: relative;
+    background: #0D0D0F;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 28px;
+    padding: 8px;
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.55),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    width: 100%;
+    max-width: 195px;
+}
+
+.attar-phone__notch {
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 12px;
+    background: #050507;
+    border-radius: 999px;
+    z-index: 2;
+}
+
+.attar-phone__screen {
+    /* Attar product palette scoped inside the device */
+    --a-bg: #0F1F22;
+    --a-surface: #15292E;
+    --a-text: #F4F4F2;
+    --a-text-soft: rgba(244, 244, 242, 0.65);
+    --a-text-tertiary: rgba(244, 244, 242, 0.4);
+    --a-border: rgba(255, 255, 255, 0.06);
+    --a-cyan: #00D4D4;
+    --a-purple: #8B4FCF;
+    --a-success: #4ADE80;
+
+    background: var(--a-bg);
+    border-radius: 22px;
+    aspect-ratio: 9/19;
+    padding: 32px 12px 14px;
+    overflow: hidden;
+    color: var(--a-text);
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    line-height: 1.35;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    position: relative;
+}
+
+.attar-phone__label {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-1);
+    margin-top: 0.85rem;
+    text-align: center;
+}
+
+/* Shared bits across screens */
+.attar-status {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: 0.5rem;
+    color: var(--a-text-tertiary);
+    letter-spacing: 0.06em;
+    padding: 0 0.25rem 0.25rem;
+}
+
+.attar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0.1rem 0.3rem;
+}
+
+.attar-header__back {
+    color: var(--a-cyan);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+}
+
+.attar-header__title {
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0;
+    color: var(--a-text);
+}
+
+.attar-header__avatar {
+    width: 16px;
+    height: 16px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--a-cyan), var(--a-purple));
+}
+
+/* Screen 1 · LOGIN */
+.attar-login {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 0.6rem;
+    gap: 0.55rem;
+}
+
+.attar-login__mark {
+    width: 36px;
+    height: 36px;
+    margin-top: 1.6rem;
+    background: linear-gradient(135deg, var(--a-cyan), var(--a-purple));
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.attar-login__title {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin: 0.55rem 0 0.1rem;
+}
+
+.attar-login__sub {
+    font-size: 0.58rem;
+    color: var(--a-text-tertiary);
+    margin: 0 0 0.4rem;
+    line-height: 1.4;
+}
+
+.attar-input {
+    width: 100%;
+    background: var(--a-surface);
+    border: 1px solid var(--a-border);
+    border-radius: 8px;
+    padding: 0.5rem 0.65rem;
+    color: var(--a-text-tertiary);
+    font-size: 0.6rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.attar-input--focused {
+    border-color: var(--a-cyan);
+    color: var(--a-text);
+}
+
+.attar-input--focused::after {
+    content: '';
+    width: 1px;
+    height: 9px;
+    background: var(--a-cyan);
+    margin-left: 4px;
+    animation: attar-caret 1.05s steps(2, end) infinite;
+}
+
+.attar-btn {
+    width: 100%;
+    background: linear-gradient(135deg, var(--a-cyan) 0%, var(--a-purple) 100%);
+    color: #062626;
+    border-radius: 999px;
+    padding: 0.55rem;
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+.attar-login__link {
+    font-size: 0.55rem;
+    color: var(--a-text-tertiary);
+    margin-top: 0.3rem;
+}
+
+.attar-login__link b { color: var(--a-cyan); font-weight: 500; }
+
+/* Screen 2 · LISTA DE VAGAS */
+.attar-search {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    background: var(--a-surface);
+    border: 1px solid var(--a-border);
+    border-radius: 999px;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.6rem;
+    color: var(--a-text-tertiary);
+}
+
+.attar-search::before {
+    content: '⌕';
+    color: var(--a-cyan);
+    font-size: 0.7rem;
+}
+
+.attar-chips {
+    display: flex;
+    gap: 0.3rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.attar-chip {
+    font-family: var(--font-mono);
+    font-size: 0.52rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.45rem;
+    border-radius: 999px;
+    border: 1px solid var(--a-border);
+    color: var(--a-text-soft);
+    background: var(--a-surface);
+}
+
+.attar-chip--active {
+    background: var(--a-cyan);
+    color: #062626;
+    border-color: transparent;
+}
+
+.attar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    overflow: hidden;
+}
+
+.attar-card {
+    background: var(--a-surface);
+    border: 1px solid var(--a-border);
+    border-radius: 10px;
+    padding: 0.5rem 0.55rem;
+    display: flex;
+    gap: 0.45rem;
+}
+
+.attar-card__avatar {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    background: linear-gradient(135deg, var(--a-cyan), var(--a-purple));
+    flex-shrink: 0;
+}
+
+.attar-card__body { flex: 1; min-width: 0; }
+
+.attar-card__title {
+    font-size: 0.62rem;
+    color: var(--a-text);
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 0.1rem;
+}
+
+.attar-card__meta {
+    font-family: var(--font-mono);
+    font-size: 0.5rem;
+    letter-spacing: 0.03em;
+    color: var(--a-text-tertiary);
+}
+
+.attar-card__salary {
+    font-family: var(--font-mono);
+    font-size: 0.58rem;
+    color: var(--a-cyan);
+    font-variant-numeric: tabular-nums;
+    align-self: center;
+    white-space: nowrap;
+}
+
+/* Screen 3 · DETALHE */
+.attar-detail__hero {
+    background: var(--a-surface);
+    border: 1px solid var(--a-border);
+    border-radius: 10px;
+    padding: 0.55rem;
+}
+
+.attar-detail__company {
+    font-family: var(--font-mono);
+    font-size: 0.5rem;
+    color: var(--a-text-tertiary);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.attar-detail__role {
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    font-weight: 600;
+    margin: 0.15rem 0 0.25rem;
+    letter-spacing: -0.01em;
+}
+
+.attar-detail__tags {
+    display: flex;
+    gap: 0.25rem;
+    margin-top: 0.35rem;
+}
+
+.attar-detail__tag {
+    font-family: var(--font-mono);
+    font-size: 0.5rem;
+    color: var(--a-text-soft);
+    background: rgba(255,255,255,0.05);
+    border-radius: 4px;
+    padding: 0.15rem 0.35rem;
+    letter-spacing: 0.04em;
+}
+
+.attar-detail__section-label {
+    font-family: var(--font-mono);
+    font-size: 0.52rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--a-text-tertiary);
+    margin: 0.2rem 0 0.15rem;
+}
+
+.attar-detail__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 0.55rem;
+    color: var(--a-text-soft);
+}
+
+.attar-detail__list li::before {
+    content: '·';
+    color: var(--a-cyan);
+    margin-right: 0.3rem;
+}
+
+/* Screen 4 · CONFIRMAÇÃO */
+.attar-success {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.8rem 0.45rem 0;
+    gap: 0.4rem;
+}
+
+.attar-success__check {
+    width: 38px;
+    height: 38px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--a-cyan), var(--a-purple));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #052224;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    animation: attar-check-pulse 2.6s ease-in-out infinite;
+}
+
+@keyframes attar-check-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(0, 212, 212, 0.45); }
+    50%      { box-shadow: 0 0 0 8px rgba(0, 212, 212, 0); }
+}
+
+.attar-success__title {
+    font-family: var(--font-heading);
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.attar-success__sub {
+    font-size: 0.55rem;
+    color: var(--a-text-tertiary);
+    line-height: 1.4;
+    margin: 0;
+}
+
+.attar-success__next {
+    width: 100%;
+    background: var(--a-surface);
+    border: 1px solid var(--a-border);
+    border-radius: 8px;
+    padding: 0.45rem;
+    margin-top: 0.4rem;
+    text-align: left;
+}
+
+.attar-success__next-label {
+    font-family: var(--font-mono);
+    font-size: 0.5rem;
+    color: var(--a-text-tertiary);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.attar-success__next-value {
+    font-size: 0.6rem;
+    color: var(--a-text);
+    margin-top: 0.1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .attar-ds__input::after,
+    .attar-input--focused::after { animation: none; opacity: 1; }
+    .attar-success__check { animation: none; }
+}
+
 /* ============ Coded Phone Mockup (XP fintech demo) ============ */
 .phone-mock {
     /* Scoped XP brand palette */

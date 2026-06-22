@@ -268,15 +268,189 @@
                     </div>
                 </div>
 
-                <!-- MOCKUP -->
+                <!-- DESIGN SYSTEM -->
                 <div class="case-rule">
-                    <span class="case-rule__label">Prototype</span>
+                    <span class="case-rule__label">Design System</span>
                     <span class="case-rule__line"></span>
                 </div>
 
                 <div class="case-section">
-                    <div class="mockup-showcase">
-                        <img src="public/images/attar-case-preview.png" alt="Attar App Mockup">
+                    <div class="attar-ds">
+                        <div class="attar-ds__col">
+                            <p class="attar-ds__label">Color tokens</p>
+                            <div class="attar-ds__swatches">
+                                <div class="attar-ds__swatch attar-ds__swatch--cyan"><span>Accent · Cyan</span><span>#00D4D4</span></div>
+                                <div class="attar-ds__swatch attar-ds__swatch--purple"><span>Accent · Purple</span><span>#8B4FCF</span></div>
+                                <div class="attar-ds__swatch attar-ds__swatch--surface"><span>Surface</span><span>#1B2A38</span></div>
+                                <div class="attar-ds__swatch attar-ds__swatch--text"><span>Text</span><span>#F4F4F2</span></div>
+                            </div>
+                        </div>
+                        <div class="attar-ds__col">
+                            <p class="attar-ds__label">Typography</p>
+                            <div class="attar-ds__type">
+                                <div class="attar-ds__type-row">
+                                    <span class="attar-ds__sample" style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 600; letter-spacing: -0.025em; line-height: 1;">Heading</span>
+                                    <span class="attar-ds__meta">600 · 24px</span>
+                                </div>
+                                <div class="attar-ds__type-row">
+                                    <span class="attar-ds__sample" style="font-size: 0.95rem; line-height: 1.4;">Body text · readable</span>
+                                    <span class="attar-ds__meta">400 · 15px</span>
+                                </div>
+                                <div class="attar-ds__type-row">
+                                    <span class="attar-ds__sample" style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;">CAPTION · MONO</span>
+                                    <span class="attar-ds__meta">Mono · 11px</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attar-ds__col">
+                            <p class="attar-ds__label">Components</p>
+                            <div class="attar-ds__components">
+                                <div class="attar-ds__btn">Apply →</div>
+                                <div class="attar-ds__chip-row">
+                                    <span class="attar-ds__chip">Design</span>
+                                    <span class="attar-ds__chip">Tech</span>
+                                    <span class="attar-ds__chip">Health</span>
+                                </div>
+                                <div class="attar-ds__input">email · example@</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCREEN FLOW -->
+                <div class="case-rule">
+                    <span class="case-rule__label">Screen Flow</span>
+                    <span class="case-rule__line"></span>
+                </div>
+
+                <div class="case-section">
+                    <div class="attar-flow">
+
+                        <!-- Phone 1 · LOGIN -->
+                        <div class="attar-phone">
+                            <div class="attar-phone__frame">
+                                <div class="attar-phone__notch"></div>
+                                <div class="attar-phone__screen">
+                                    <div class="attar-status"><span>09:41</span><span>5G</span></div>
+                                    <div class="attar-login">
+                                        <div class="attar-login__mark" aria-hidden="true"></div>
+                                        <h4 class="attar-login__title">Attar</h4>
+                                        <p class="attar-login__sub">Your next opportunity starts here.</p>
+                                        <div class="attar-input attar-input--focused">amanda@email</div>
+                                        <div class="attar-input">password</div>
+                                        <div class="attar-btn">Sign in</div>
+                                        <p class="attar-login__link">No account? <b>Create one</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="attar-phone__label">01 · Login</p>
+                        </div>
+
+                        <!-- Phone 2 · JOB LIST -->
+                        <div class="attar-phone">
+                            <div class="attar-phone__frame">
+                                <div class="attar-phone__notch"></div>
+                                <div class="attar-phone__screen">
+                                    <div class="attar-status"><span>09:41</span><span>5G</span></div>
+                                    <div class="attar-header">
+                                        <h4 class="attar-header__title">Jobs</h4>
+                                        <div class="attar-header__avatar" aria-hidden="true"></div>
+                                    </div>
+                                    <div class="attar-search">Search job or company</div>
+                                    <div class="attar-chips">
+                                        <span class="attar-chip attar-chip--active">Design</span>
+                                        <span class="attar-chip">Tech</span>
+                                        <span class="attar-chip">Health</span>
+                                    </div>
+                                    <div class="attar-list">
+                                        <div class="attar-card">
+                                            <div class="attar-card__avatar" aria-hidden="true"></div>
+                                            <div class="attar-card__body">
+                                                <p class="attar-card__title">Mid Product Designer</p>
+                                                <p class="attar-card__meta">Nubank · Remote</p>
+                                            </div>
+                                            <p class="attar-card__salary">R$ 12k</p>
+                                        </div>
+                                        <div class="attar-card">
+                                            <div class="attar-card__avatar" aria-hidden="true"></div>
+                                            <div class="attar-card__body">
+                                                <p class="attar-card__title">UX Researcher</p>
+                                                <p class="attar-card__meta">iFood · Hybrid</p>
+                                            </div>
+                                            <p class="attar-card__salary">R$ 9.5k</p>
+                                        </div>
+                                        <div class="attar-card">
+                                            <div class="attar-card__avatar" aria-hidden="true"></div>
+                                            <div class="attar-card__body">
+                                                <p class="attar-card__title">Junior Designer</p>
+                                                <p class="attar-card__meta">QuintoAndar · SP</p>
+                                            </div>
+                                            <p class="attar-card__salary">R$ 5.8k</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="attar-phone__label">02 · Jobs</p>
+                        </div>
+
+                        <!-- Phone 3 · DETAIL -->
+                        <div class="attar-phone">
+                            <div class="attar-phone__frame">
+                                <div class="attar-phone__notch"></div>
+                                <div class="attar-phone__screen">
+                                    <div class="attar-status"><span>09:41</span><span>5G</span></div>
+                                    <div class="attar-header">
+                                        <span class="attar-header__back">← Back</span>
+                                    </div>
+                                    <div class="attar-detail__hero">
+                                        <p class="attar-detail__company">Nubank · Remote</p>
+                                        <h5 class="attar-detail__role">Mid Product Designer</h5>
+                                        <p style="font-family: var(--font-mono); font-size: 0.6rem; color: var(--a-cyan); margin: 0;">R$ 12,000 / mo</p>
+                                        <div class="attar-detail__tags">
+                                            <span class="attar-detail__tag">Full-time</span>
+                                            <span class="attar-detail__tag">Mid</span>
+                                            <span class="attar-detail__tag">Remote</span>
+                                        </div>
+                                    </div>
+                                    <p class="attar-detail__section-label">Requirements</p>
+                                    <ul class="attar-detail__list">
+                                        <li>Figma + Design System</li>
+                                        <li>Qualitative research</li>
+                                        <li>Intermediate English</li>
+                                        <li>Portfolio with cases</li>
+                                    </ul>
+                                    <div class="attar-btn" style="margin-top: auto;">Apply now</div>
+                                </div>
+                            </div>
+                            <p class="attar-phone__label">03 · Detail</p>
+                        </div>
+
+                        <!-- Phone 4 · SUCCESS -->
+                        <div class="attar-phone">
+                            <div class="attar-phone__frame">
+                                <div class="attar-phone__notch"></div>
+                                <div class="attar-phone__screen">
+                                    <div class="attar-status"><span>09:41</span><span>5G</span></div>
+                                    <div class="attar-success">
+                                        <div class="attar-success__check" aria-hidden="true">✓</div>
+                                        <h5 class="attar-success__title">Application sent</h5>
+                                        <p class="attar-success__sub">Nubank will review your application within 3 business days.</p>
+
+                                        <div class="attar-success__next">
+                                            <p class="attar-success__next-label">Next step</p>
+                                            <p class="attar-success__next-value">Recommended course: Design System in practice</p>
+                                        </div>
+
+                                        <div class="attar-success__next">
+                                            <p class="attar-success__next-label">Similar roles</p>
+                                            <p class="attar-success__next-value">3 similar openings in SP</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="attar-phone__label">04 · Success</p>
+                        </div>
+
                     </div>
                 </div>
 
