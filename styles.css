@@ -1959,6 +1959,8 @@ strong {
 
 /* ============ Attar — Mini Design System + Coded Phone Flow ============ */
 .attar-ds {
+    --a-font: 'Open Sans', system-ui, sans-serif;
+    font-family: var(--a-font);
     --at-cyan: #00D4D4;
     --at-purple: #8B4FCF;
     --at-bg-1: #0A1A2A;
@@ -1989,7 +1991,7 @@ strong {
 }
 
 .attar-ds__label {
-    font-family: var(--font-mono);
+    font-family: var(--a-font);
     font-size: 0.66rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -2010,7 +2012,7 @@ strong {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    font-family: var(--font-mono);
+    font-family: var(--a-font);
     font-size: 0.62rem;
     color: var(--at-text);
     border: 1px solid var(--at-border);
@@ -2050,7 +2052,7 @@ strong {
 }
 
 .attar-ds__meta {
-    font-family: var(--font-mono);
+    font-family: var(--a-font);
     font-size: 0.65rem;
     color: var(--at-text-tertiary);
     white-space: nowrap;
@@ -2068,7 +2070,7 @@ strong {
     border: none;
     border-radius: 999px;
     padding: 0.65rem 1.1rem;
-    font-family: var(--font-heading);
+    font-family: var(--a-font);
     font-size: 0.78rem;
     font-weight: 600;
     letter-spacing: 0.02em;
@@ -2083,7 +2085,7 @@ strong {
 }
 
 .attar-ds__chip {
-    font-family: var(--font-mono);
+    font-family: var(--a-font);
     font-size: 0.62rem;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -2183,6 +2185,7 @@ strong {
 }
 
 .attar-phone__screen {
+    --a-font: 'Open Sans', system-ui, sans-serif;
     /* Attar product palette scoped inside the device */
     --a-bg: #0F1F22;
     --a-surface: #15292E;
@@ -2200,7 +2203,8 @@ strong {
     padding: 32px 12px 14px;
     overflow: hidden;
     color: var(--a-text);
-    font-family: var(--font-body);
+    font-family: var(--a-font);
+    font-weight: 400;
     font-size: 0.62rem;
     line-height: 1.35;
     display: flex;
@@ -2210,7 +2214,7 @@ strong {
 }
 
 .attar-phone__label {
-    font-family: var(--font-mono);
+    font-family: var(--a-font);
     font-size: 0.65rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -2223,7 +2227,7 @@ strong {
 .attar-status {
     display: flex;
     justify-content: space-between;
-    font-family: var(--font-mono);
+    font-family: var(--a-font);
     font-size: 0.5rem;
     color: var(--a-text-tertiary);
     letter-spacing: 0.06em;
@@ -2239,12 +2243,12 @@ strong {
 
 .attar-header__back {
     color: var(--a-cyan);
-    font-family: var(--font-mono);
+    font-family: var(--a-font);
     font-size: 0.7rem;
 }
 
 .attar-header__title {
-    font-family: var(--font-heading);
+    font-family: var(--a-font);
     font-size: 0.72rem;
     font-weight: 600;
     letter-spacing: -0.01em;
@@ -2279,7 +2283,7 @@ strong {
 }
 
 .attar-login__title {
-    font-family: var(--font-heading);
+    font-family: var(--a-font);
     font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: -0.02em;
@@ -2326,7 +2330,7 @@ strong {
     color: #062626;
     border-radius: 999px;
     padding: 0.55rem;
-    font-family: var(--font-heading);
+    font-family: var(--a-font);
     font-size: 0.7rem;
     font-weight: 600;
     text-align: center;
@@ -2368,7 +2372,7 @@ strong {
 }
 
 .attar-chip {
-    font-family: var(--font-mono);
+    font-family: var(--a-font);
     font-size: 0.52rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -2420,14 +2424,14 @@ strong {
 }
 
 .attar-card__meta {
-    font-family: var(--font-mono);
+    font-family: var(--a-font);
     font-size: 0.5rem;
     letter-spacing: 0.03em;
     color: var(--a-text-tertiary);
 }
 
 .attar-card__salary {
-    font-family: var(--font-mono);
+    font-family: var(--a-font);
     font-size: 0.58rem;
     color: var(--a-cyan);
     font-variant-numeric: tabular-nums;
@@ -2444,7 +2448,7 @@ strong {
 }
 
 .attar-detail__company {
-    font-family: var(--font-mono);
+    font-family: var(--a-font);
     font-size: 0.5rem;
     color: var(--a-text-tertiary);
     letter-spacing: 0.05em;
@@ -2452,7 +2456,7 @@ strong {
 }
 
 .attar-detail__role {
-    font-family: var(--font-heading);
+    font-family: var(--a-font);
     font-size: 0.78rem;
     font-weight: 600;
     margin: 0.15rem 0 0.25rem;
@@ -2466,7 +2470,7 @@ strong {
 }
 
 .attar-detail__tag {
-    font-family: var(--font-mono);
+    font-family: var(--a-font);
     font-size: 0.5rem;
     color: var(--a-text-soft);
     background: rgba(255,255,255,0.05);
@@ -2476,7 +2480,7 @@ strong {
 }
 
 .attar-detail__section-label {
-    font-family: var(--font-mono);
+    font-family: var(--a-font);
     font-size: 0.52rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -2533,7 +2537,7 @@ strong {
 }
 
 .attar-success__title {
-    font-family: var(--font-heading);
+    font-family: var(--a-font);
     font-size: 0.82rem;
     font-weight: 600;
     margin: 0;
@@ -2557,7 +2561,7 @@ strong {
 }
 
 .attar-success__next-label {
-    font-family: var(--font-mono);
+    font-family: var(--a-font);
     font-size: 0.5rem;
     color: var(--a-text-tertiary);
     letter-spacing: 0.06em;
