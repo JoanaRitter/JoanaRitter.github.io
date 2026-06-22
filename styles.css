@@ -439,9 +439,16 @@ section {
 .image-wrapper {
     width: 100%;
     aspect-ratio: 4/5;
-    padding: 1rem;
-    border-radius: 24px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid var(--card-border);
     transition: transform var(--transition-slow);
+}
+
+.image-wrapper .profile-img {
+    border-radius: 0;
+    box-shadow: none;
+    display: block;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -465,26 +472,12 @@ section {
 
 
 
-.greeting {
-    font-family: var(--font-heading);
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
-    color: var(--text-secondary);
-    display: inline-block;
-    margin-right: 0.5rem;
-    font-weight: 400;
-    letter-spacing: normal;
-    vertical-align: middle;
-}
-
 .title {
-    font-size: clamp(2.5rem, 6.5vw, 4.5rem);
+    font-size: clamp(2.75rem, 7vw, 5rem);
     font-weight: 500;
-    margin-bottom: 0.5rem;
-    letter-spacing: -0.035em;
-    line-height: 1.02;
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.04em;
+    line-height: 1;
 }
 
 .dot {
