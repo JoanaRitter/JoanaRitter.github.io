@@ -67,24 +67,6 @@ button:focus-visible,
     outline-offset: 4px;
 }
 
-/* Skip-link for keyboard / screen reader users */
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 1rem;
-    background: var(--accent-1);
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    z-index: 2000;
-    font-weight: 500;
-    text-decoration: none;
-    transition: top 200ms var(--ease-out-strong);
-}
-
-.skip-link:focus {
-    top: 1rem;
-}
 
 /* Background Effects */
 .glow-bg {
