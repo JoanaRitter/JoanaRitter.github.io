@@ -76,3 +76,35 @@ document.addEventListener('keydown', (e) => {
         mobileMenuToggle.focus();
     }
 });
+
+// Case TOC — sticky aside that tracks the section currently in view
+(function () {
+    const toc = document.querySelector('.case-toc');
+    if (!toc) return;
+
+    const tocLinks = Array.from(toc.querySelectorAll('.case-toc__link'));
+    const sections = tocLinks
+        .map(a => ({ link: a, el: document.querySelector(a.getAttribute('href')) }))
+        .filter(p => p.el);
+    if (!sections.length) return;
+
+    const firstSection = sections[0].el;
+
+    function tick() {
+        // Show TOC once we've crossed into the first section
+        const firstTop = firstSection.getBoundingClientRect().top;
+        toc.classList.toggle('is-visible', firstTop < window.innerHeight * 0.45);
+
+        // Active section = the last one whose top is above the activation line (~25% of viewport)
+        const threshold = window.innerHeight * 0.25;
+        let activeIdx = -1;
+        sections.forEach((s, i) => {
+            if (s.el.getBoundingClientRect().top <= threshold) activeIdx = i;
+        });
+        tocLinks.forEach((link, i) => link.classList.toggle('is-active', i === activeIdx));
+    }
+
+    window.addEventListener('scroll', tick, { passive: true });
+    window.addEventListener('resize', tick, { passive: true });
+    tick();
+})();
