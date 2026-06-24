@@ -6,6 +6,11 @@
     --text-tertiary: #82828C;
     --accent-1: #E90074;
     --accent-1-soft: rgba(233, 0, 116, 0.12);
+
+    /* Semantic colors (global) — case-scoped palettes can override */
+    --success: #4ADE80;
+    --warning: #F87171;
+    --info:    #60A5FA;
     --accent-2: #EEEEEE;
     --accent-3: #DDDDDD;
 
@@ -2048,8 +2053,8 @@ strong {
     --at-bg-1: #0A1A2A;
     --at-bg-2: #1A0F2E;
     --at-text: #F4F4F2;
-    --at-text-soft: rgba(244, 244, 242, 0.7);
-    --at-text-tertiary: rgba(244, 244, 242, 0.45);
+    --at-text-soft: rgba(244, 244, 242, 0.72);
+    --at-text-tertiary: rgba(244, 244, 242, 0.58);
     --at-border: rgba(255, 255, 255, 0.08);
     --at-surface: rgba(255, 255, 255, 0.04);
 
@@ -2272,8 +2277,8 @@ strong {
     --a-bg: #0F1F22;
     --a-surface: #15292E;
     --a-text: #F4F4F2;
-    --a-text-soft: rgba(244, 244, 242, 0.65);
-    --a-text-tertiary: rgba(244, 244, 242, 0.4);
+    --a-text-soft: rgba(244, 244, 242, 0.72);
+    --a-text-tertiary: rgba(244, 244, 242, 0.55);
     --a-border: rgba(255, 255, 255, 0.06);
     --a-cyan: #00D4D4;
     --a-purple: #8B4FCF;
@@ -3767,7 +3772,7 @@ strong {
     --p-bg: #FFFFFF;
     --p-text: #0A1A36;
     --p-text-soft: #4A5876;
-    --p-text-tertiary: #8A95AA;
+    --p-text-tertiary: #6E7791;
     --p-border: #E4E8F0;
     --p-card: #F5F7FB;
     --p-accent: #0A4078;
